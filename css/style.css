@@ -434,11 +434,22 @@ button { font-family: inherit; }
 }
 
 @media (max-width: 768px) {
+  .categoria-secao {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
   .categoria-banner {
-    width: calc(100% + 3rem);
-    margin-left: -1.5rem;
-    margin-right: -1.5rem;
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    margin-right: 0;
     border-radius: 0;
+  }
+
+  .categoria-cabecalho,
+  .produtos-grid {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
   }
 
   .main-nav {

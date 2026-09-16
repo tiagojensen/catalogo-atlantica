@@ -18,6 +18,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   document.getElementById("ano-atual").textContent = new Date().getFullYear();
   iniciarMenuMobile();
   iniciarDropdowns();
+  iniciarModalProduto();
 
   try {
     const [produtos, categorias] = await Promise.all([
@@ -163,9 +164,54 @@ function preencherGradeDeProdutos(fragmento, produtosDaCategoria, categoria) {
     card.querySelector(".produto-nome").textContent = produto.nome;
     card.querySelector(".produto-descricao").textContent = produto.descricao || "";
     card.querySelector(".produto-preco").textContent = formatoMoeda.format(produto.preco);
+    card.querySelector(".produto-detalhes-botao").addEventListener("click", () => {
+      abrirModalProduto(produto, categoria);
+    });
 
     grade.appendChild(card);
   });
+}
+
+/* =========================================================
+   MODAL DE DETALHES DO PRODUTO
+   ========================================================= */
+function iniciarModalProduto() {
+  const modal = document.getElementById("modal-produto");
+  const botaoFechar = document.getElementById("modal-produto-fechar");
+
+  botaoFechar.addEventListener("click", fecharModalProduto);
+  modal.addEventListener("click", (evento) => {
+    if (evento.target === modal) fecharModalProduto();
+  });
+  document.addEventListener("keydown", (evento) => {
+    if (evento.key === "Escape" && !modal.hidden) fecharModalProduto();
+  });
+}
+
+function abrirModalProduto(produto, categoria) {
+  const modal = document.getElementById("modal-produto");
+  const imagem = document.getElementById("modal-produto-imagem");
+  const descricao = produto.descricaoCompleta || produto.descricao || "Descrição não disponível.";
+
+  imagem.src = produto.imagem;
+  imagem.alt = produto.nome;
+  imagem.onerror = () => (imagem.src = IMAGEM_PADRAO);
+  document.getElementById("modal-produto-categoria").textContent = categoria.nome;
+  document.getElementById("modal-produto-titulo").textContent = produto.nome;
+  document.getElementById("modal-produto-descricao").textContent = descricao;
+  document.getElementById("modal-produto-preco").textContent = formatoMoeda.format(produto.preco);
+
+  modal.hidden = false;
+  modal.setAttribute("aria-hidden", "false");
+  document.body.classList.add("modal-aberto");
+  document.getElementById("modal-produto-fechar").focus();
+}
+
+function fecharModalProduto() {
+  const modal = document.getElementById("modal-produto");
+  modal.hidden = true;
+  modal.setAttribute("aria-hidden", "true");
+  document.body.classList.remove("modal-aberto");
 }
 
 /* =========================================================

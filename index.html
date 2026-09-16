@@ -136,9 +136,28 @@
       <h3 class="produto-nome"></h3>
       <p class="produto-descricao"></p>
       <p class="produto-preco"></p>
+      <button type="button" class="produto-detalhes-botao">Ver detalhes</button>
     </div>
   </article>
 </template>
+
+<!-- Modal com os detalhes completos do produto -->
+<div class="modal-produto" id="modal-produto" hidden aria-hidden="true">
+  <div class="modal-produto-caixa" role="dialog" aria-modal="true" aria-labelledby="modal-produto-titulo" aria-describedby="modal-produto-descricao">
+    <button type="button" class="modal-produto-fechar" id="modal-produto-fechar" aria-label="Fechar detalhes">&times;</button>
+    <div class="modal-produto-corpo">
+      <div class="modal-produto-imagem-wrap">
+        <img class="modal-produto-imagem" id="modal-produto-imagem" src="" alt="">
+      </div>
+      <div class="modal-produto-info">
+        <span class="modal-produto-categoria" id="modal-produto-categoria"></span>
+        <h2 id="modal-produto-titulo"></h2>
+        <p class="modal-produto-descricao" id="modal-produto-descricao"></p>
+        <p class="modal-produto-preco" id="modal-produto-preco"></p>
+      </div>
+    </div>
+  </div>
+</div>
 
 <script src="js/script.js"></script>
 </body>

@@ -191,6 +191,7 @@ function iniciarCarrossel(secaoElemento) {
   let indiceAtual = 0;
   let intervalo;
   let inicioDoArraste = null;
+  let ultimoGesto = 0;
 
   slides.forEach((slide, indice) => {
     slide.setAttribute("aria-hidden", String(indice !== indiceAtual));
@@ -233,25 +234,41 @@ function iniciarCarrossel(secaoElemento) {
   botaoAnterior.addEventListener("click", () => irParaSlide(indiceAtual - 1));
   botaoProximo.addEventListener("click", () => irParaSlide(indiceAtual + 1));
 
+  function finalizarArraste(posicaoFinal) {
+    if (inicioDoArraste === null) return;
+    const deslocamento = posicaoFinal - inicioDoArraste;
+    inicioDoArraste = null;
+    wrapper.classList.remove("arrastando");
+    if (Math.abs(deslocamento) < 40 || Date.now() - ultimoGesto < 250) return;
+    ultimoGesto = Date.now();
+    irParaSlide(indiceAtual + (deslocamento < 0 ? 1 : -1));
+  }
+
   wrapper.addEventListener("pointerdown", (evento) => {
+    if (evento.pointerType === "touch") return;
     inicioDoArraste = evento.clientX;
     wrapper.classList.add("arrastando");
     wrapper.setPointerCapture?.(evento.pointerId);
   });
 
   wrapper.addEventListener("pointerup", (evento) => {
-    if (inicioDoArraste === null) return;
-    const deslocamento = evento.clientX - inicioDoArraste;
-    inicioDoArraste = null;
-    wrapper.classList.remove("arrastando");
-    if (Math.abs(deslocamento) < 40) return;
-    irParaSlide(indiceAtual + (deslocamento < 0 ? 1 : -1));
+    if (evento.pointerType === "touch") return;
+    finalizarArraste(evento.clientX);
   });
 
   wrapper.addEventListener("pointercancel", () => {
     inicioDoArraste = null;
     wrapper.classList.remove("arrastando");
   });
+
+  wrapper.addEventListener("touchstart", (evento) => {
+    inicioDoArraste = evento.touches[0].clientX;
+    wrapper.classList.add("arrastando");
+  }, { passive: true });
+
+  wrapper.addEventListener("touchend", (evento) => {
+    finalizarArraste(evento.changedTouches[0].clientX);
+  }, { passive: true });
 
   atualizarCarrossel();
   reiniciarAutoplay();

@@ -1,0 +1,102 @@
+[
+  {
+    "id": "oleo-001",
+    "nome": "HIGIENIZANTE BUCAL OZONIZADO",
+    "categoria": "oleos-ozonizados",
+    "preco": 131.98,
+    "imagem": "imagens/produtos/oleos/higiene_bucal.png",
+    "descricao": "O Óleo NatuOZ Bucal pode auxiliar na saúde bucal, ajudando a reduzir microrganismos e a inflamação das gengivas.",
+    "destaque": true,
+    "fonte": "https://atlanticanaturalbr.com.br/product/bucal-ozonizado/"
+  },
+  {
+    "id": "oleo-002",
+    "nome": "NATUOZ FAMILY ÓLEO OZONIZADO 50ML",
+    "categoria": "oleos-ozonizados",
+    "preco": 169.98,
+    "imagem": "imagens/produtos/oleos/natuoz family.jpeg",
+    "descricao": "Óleo que combina os benefícios do ozônio com as propriedades hidratantes e nutritivas dos óleos vegetais.",
+    "destaque": true,
+    "fonte": "https://atlanticanaturalbr.com.br/product/natuoz-family-oleo-ozonizado-50ml/"
+  },
+  {
+    "id": "oleo-003",
+    "nome": "ÓLEO BRONZE OZONIZADO",
+    "categoria": "oleos-ozonizados",
+    "preco": 131.98,
+    "imagem": "imagens/produtos/oleos/bronze.png",
+    "descricao": "Desenvolvido para auxiliar no processo de bronzeamento, ajudando a estimular a produção de melanina e a manter a pele hidratada.",
+    "destaque": false,
+    "fonte": "https://atlanticanaturalbr.com.br/product/natu-bronze-ozonizado/"
+  },
+  {
+    "id": "oleo-004",
+    "nome": "ÓLEO POWER OZONIZADO",
+    "categoria": "oleos-ozonizados",
+    "preco": 131.98,
+    "imagem": "imagens/produtos/oleos/power.png",
+    "descricao": "Óleo formulado para auxiliar no alívio de dores, com ação analgésica e anti-inflamatória.",
+    "destaque": false,
+    "fonte": "https://atlanticanaturalbr.com.br/product/power-ozonizado/"
+  },
+  {
+    "id": "oleo-005",
+    "nome": "ÓLEO CORPO OZONIZADO",
+    "categoria": "oleos-ozonizados",
+    "preco": 131.98,
+    "imagem": "imagens/produtos/oleos/corpo.png",
+    "descricao": "Óleo corporal cosmético com propriedades antimicrobianas e antioxidantes, que ajuda a hidratar a pele.",
+    "destaque": false,
+    "fonte": "https://atlanticanaturalbr.com.br/product/corpo-ozonizado/"
+  },
+  {
+    "id": "oleo-006",
+    "nome": "ÓLEO ÍNTIMO OZONIZADO",
+    "categoria": "oleos-ozonizados",
+    "preco": 131.98,
+    "imagem": "imagens/produtos/oleos/intimo.jpg",
+    "descricao": "Desenvolvido para o cuidado íntimo, promovendo sensação de limpeza, bem-estar e confiança ao longo do dia.",
+    "destaque": false,
+    "fonte": "https://atlanticanaturalbr.com.br/product/oleo-intimo/"
+  },
+  {
+    "id": "oleo-007",
+    "nome": "NATUOZ ÓLEO OZONIZADO",
+    "categoria": "oleos-ozonizados",
+    "preco": 89.98,
+    "imagem": "imagens/produtos/oleos/natuoz.png",
+    "descricao": "Combinação de óleos vegetais puros e ozônio (O3), resultando em um óleo enriquecido com propriedades do ozônio.",
+    "destaque": true,
+    "fonte": "https://atlanticanaturalbr.com.br/product/natuoz-oleo-ozonizado/"
+  },
+  {
+    "id": "oleo-008",
+    "nome": "ÓLEO HOT OZONIZADO",
+    "categoria": "oleos-ozonizados",
+    "preco": 131.98,
+    "imagem": "imagens/produtos/oleos/hot.png",
+    "descricao": "Óleo com benefícios associados ao aumento da circulação sanguínea, à estimulação da sensação e à redução da inflamação.",
+    "destaque": false,
+    "fonte": "https://atlanticanaturalbr.com.br/product/oleo-hot-ozonizado/"
+  },
+  {
+    "id": "oleo-009",
+    "nome": "ÓLEO FIOS OZONIZADO",
+    "categoria": "oleos-ozonizados",
+    "preco": 131.98,
+    "imagem": "imagens/produtos/oleos/fios.png",
+    "descricao": "Desenvolvido para auxiliar no tratamento da queda de cabelo, cuidando dos fios e do couro cabeludo.",
+    "destaque": false,
+    "fonte": "https://atlanticanaturalbr.com.br/product/oleo-fios-ozonizado/"
+  },
+  {
+    "id": "oleo-010",
+    "nome": "ÓLEO HIALURÔNICO OZONIZADO",
+    "categoria": "oleos-ozonizados",
+    "preco": 131.98,
+    "imagem": "imagens/produtos/oleos/hialuronico.png",
+    "descricao": "Óleo com foco em hidratação profunda, redução de rugas e linhas de expressão, reparação da pele e ação antioxidante.",
+    "destaque": false,
+    "fonte": "https://atlanticanaturalbr.com.br/product/oleo-hialuronico-ozonizado/"
+  }
+]

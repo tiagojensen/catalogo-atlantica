@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Catálogo</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Archivo:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ===================== CABEÇALHO ===================== -->
+<header class="site-header">
+  <div class="header-inner">
+    <a href="#inicio" class="logo" aria-label="Ir para o início">
+      <img class="logo-imagem" src="imagens/logo.png" alt="Catálogo">
+    </a>
+
+    <nav class="main-nav" id="main-nav">
+      <a href="#inicio" class="nav-link">Início</a>
+
+      <div class="nav-dropdown">
+        <button type="button" class="nav-link nav-dropdown-trigger" aria-expanded="false" aria-controls="menu-catalogos">
+          Catálogos
+        </button>
+        <div class="nav-dropdown-menu" id="menu-catalogos">
+          <!-- catálogos inseridos via JS -->
+        </div>
+      </div>
+
+      <div class="nav-dropdown">
+        <button type="button" class="nav-link nav-dropdown-trigger" aria-expanded="false" aria-controls="menu-categorias">
+          Produtos
+        </button>
+        <div class="nav-dropdown-menu" id="menu-categorias">
+          <!-- categorias inseridas via JS -->
+        </div>
+      </div>
+
+      <a href="https://cadastro.atlanticanatural.com.br/imperialdiamante" class="nav-link nav-cta" target="_blank" rel="noopener noreferrer">Seja um consultor</a>
+    </nav>
+
+    <button type="button" class="nav-toggle" id="nav-toggle" aria-label="Abrir menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="inicio">
+
+  <!-- ===================== SEÇÕES DE CATEGORIA (banner + produtos) ===================== -->
+  <!-- Cada categoria é montada a partir dos templates abaixo e inserida aqui pelo script.js -->
+  <div id="secoes-produtos">
+    <p class="carregando" id="mensagem-carregando">Carregando catálogo…</p>
+  </div>
+
+  <!-- ===================== SEJA UM CONSULTOR ===================== -->
+  <section id="consultor" class="consultor">
+    <div class="consultor-inner">
+      <h2>Seja um consultor</h2>
+      <p>Revenda nossos produtos com condições especiais, suporte de catálogo e materiais prontos para divulgação.</p>
+      <a href="https://cadastro.atlanticanatural.com.br/imperialdiamante" class="botao botao-secundario" target="_blank" rel="noopener noreferrer">Quero ser consultor</a>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===================== RODAPÉ ===================== -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-bloco">
+      <p class="logo footer-logo">Catálogo<span>.</span></p>
+      <p>Catálogo digital de produtos, atualizado direto da nossa equipe.</p>
+    </div>
+    <div class="footer-bloco">
+      <h3>Navegação</h3>
+      <a href="#inicio">Início</a>
+      <a href="#secoes-produtos">Catálogos</a>
+      <a href="#consultor">Seja um consultor</a>
+    </div>
+    <div class="footer-bloco">
+      <h3>Contato</h3>
+      <a href="tel:+5542999808084">42 99980-8084</a>
+    </div>
+  </div>
+  <p class="footer-copy">© <span id="ano-atual"></span> Catálogo. Todos os direitos reservados.</p>
+</footer>
+
+<a class="whatsapp-flutuante" href="https://wa.me/5542999808084" target="_blank" rel="noopener noreferrer" aria-label="Falar pelo WhatsApp">
+  <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.372-.025-.521-.075-.149-.669-1.611-.916-2.206-.242-.579-.487-.5-.67-.51-.173-.008-.372-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.626.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982 1-3.648-.235-.374a9.86 9.86 0 0 1-1.511-5.26c.001-5.45 4.436-9.884 9.89-9.884 2.64 0 5.122 1.03 6.986 2.895a9.84 9.84 0 0 1 2.892 6.994c-.003 5.45-4.437 9.887-9.885 9.887m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.89c0 2.096.547 4.142 1.588 5.946L.057 24l6.304-1.654a11.882 11.882 0 0 0 5.684 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.479-8.413"/>
+  </svg>
+</a>
+
+<!-- ===================== TEMPLATES REUTILIZÁVEIS ===================== -->
+<!-- Estrutura escrita uma única vez: banner (carrossel) + grade de produtos de UMA categoria -->
+<template id="template-categoria">
+  <section class="categoria-secao" id="">
+    <div class="categoria-banner">
+      <div class="swiper banner-swiper">
+        <div class="swiper-wrapper"></div>
+        <div class="swiper-pagination"></div>
+        <button type="button" class="swiper-button-prev" aria-label="Banner anterior"></button>
+        <button type="button" class="swiper-button-next" aria-label="Próximo banner"></button>
+      </div>
+    </div>
+
+    <div class="categoria-cabecalho">
+      <h2 class="categoria-titulo"></h2>
+      <span class="categoria-contagem"></span>
+    </div>
+
+    <div class="produtos-grid"></div>
+  </section>
+</template>
+
+<!-- Um slide de banner -->
+<template id="template-banner-slide">
+  <div class="swiper-slide">
+    <img src="" alt="">
+  </div>
+</template>
+
+<!-- Um card de produto -->
+<template id="template-produto-card">
+  <article class="produto-card">
+    <div class="produto-imagem-wrap">
+      <img class="produto-imagem" src="" alt="" loading="lazy">
+    </div>
+    <div class="produto-info">
+      <span class="produto-categoria"></span>
+      <h3 class="produto-nome"></h3>
+      <p class="produto-descricao"></p>
+      <p class="produto-preco"></p>
+    </div>
+  </article>
+</template>
+
+<script src="js/script.js"></script>
+</body>
+</html>

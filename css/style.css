@@ -434,6 +434,13 @@ button { font-family: inherit; }
 }
 
 @media (max-width: 768px) {
+  .categoria-banner {
+    width: calc(100% + 3rem);
+    margin-left: -1.5rem;
+    margin-right: -1.5rem;
+    border-radius: 0;
+  }
+
   .main-nav {
     position: absolute;
     top: 100%;

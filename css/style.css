@@ -184,6 +184,39 @@ button { font-family: inherit; }
 /* =========================================================
    SEÇÃO DE CATEGORIA (banner + grade de produtos)
    ========================================================= */
+.empresa-abertura {
+  max-width: var(--largura-max);
+  margin: 0 auto;
+  padding: 0 1.5rem clamp(3rem, 6vw, 5rem);
+  text-align: center;
+}
+.empresa-abertura-imagem {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0 auto clamp(2rem, 4vw, 3.5rem);
+  border-radius: var(--raio);
+  box-shadow: 0 14px 34px rgba(33, 38, 31, 0.12);
+}
+.empresa-abertura h1 {
+  margin: 0;
+  font-family: var(--fonte-display);
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  font-weight: 500;
+}
+.produtos-abertura {
+  max-width: var(--largura-max);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  border-top: 1px solid var(--line);
+  scroll-margin-top: 90px;
+}
+.produtos-titulo {
+  margin: 1.25rem 0 0.5rem;
+  text-transform: none;
+  text-align: center;
+}
+.produtos-abertura + #secoes-produtos .categoria-secao:first-child { padding-top: 1.25rem; }
 .categoria-secao {
   max-width: var(--largura-max);
   margin: 0 auto;

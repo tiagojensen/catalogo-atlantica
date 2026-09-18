@@ -34,7 +34,7 @@ arquivos locais (`file://`) por segurança. Use um servidor local simples:
 ## Como adicionar produtos
 
 1. Coloque a imagem na subpasta da categoria em `imagens/produtos/` — por
-   exemplo, `imagens/produtos/oleos/`.
+   exemplo, `imagens/produtos/oleos_ozonizados/`.
 2. Adicione um novo item em `dados/produtos.json`, seguindo o formato:
    ```json
    {
@@ -70,9 +70,10 @@ durante o desenvolvimento. Isso é tratado em `js/script.js`, na função
 
 ## Quando for para um domínio de verdade
 
-Hoje as imagens estão em `imagens/produtos/` e `imagens/banners/`, referenciadas
-por caminho relativo. Isso funciona bem enquanto tudo mora na mesma pasta do
-site. Quando o projeto crescer, meu sugestão é:
+Hoje as imagens estão organizadas em subpastas dentro de `imagens/produtos/`,
+com os banners de cada categoria dentro da respectiva pasta `banners/`.
+Os caminhos são relativos e isso funciona bem enquanto tudo mora na mesma
+pasta do site. Quando o projeto crescer, minha sugestão é:
 
 1. **Banco de dados**: migrar `produtos.json` / `categorias.json` para um
    banco gerenciado, como Firebase (Firestore) ou Supabase (Postgres) — ambos

@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 });
 
 async function buscarJSON(caminho) {
-  const resposta = await fetch(caminho);
+  const resposta = await fetch(caminho, { cache: "no-store" });
   if (!resposta.ok) throw new Error(`Falha ao buscar ${caminho}`);
   return resposta.json();
 }

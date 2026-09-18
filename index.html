@@ -42,6 +42,7 @@
       </div>
 
       <a href="https://cadastro.atlanticanatural.com.br/imperialdiamante" class="nav-link nav-cta" target="_blank" rel="noopener noreferrer">Seja um consultor</a>
+      <button type="button" class="nav-link nav-sobre-nos abrir-sobre-nos">Sobre nós</button>
     </nav>
 
     <button type="button" class="nav-toggle" id="nav-toggle" aria-label="Abrir menu" aria-expanded="false">
@@ -72,22 +73,23 @@
 <!-- ===================== RODAPÉ ===================== -->
 <footer class="site-footer">
   <div class="footer-inner">
-    <div class="footer-bloco">
-      <p class="logo footer-logo">Catálogo<span>.</span></p>
-      <p>Catálogo digital de produtos, atualizado direto da nossa equipe.</p>
+    <div class="footer-bloco footer-identidade">
+      <img class="logo-imagem footer-logo-imagem" src="imagens/logo.png" alt="Atlântica Natural">
+      <p class="footer-institucional">Fundada em 2020, em meio à pandemia, destacamo-nos como pioneiros na área da ozonioterapia, consolidando-nos como líderes no mercado nacional de produtos ozonizados.</p>
     </div>
     <div class="footer-bloco">
       <h3>Navegação</h3>
       <a href="#inicio">Início</a>
       <a href="#secoes-produtos">Catálogos</a>
       <a href="#consultor">Seja um consultor</a>
+      <button type="button" class="footer-link-botao abrir-sobre-nos">Sobre nós</button>
     </div>
     <div class="footer-bloco">
       <h3>Contato</h3>
       <a href="tel:+5542999808084">42 99980-8084</a>
     </div>
   </div>
-  <p class="footer-copy">© <span id="ano-atual"></span> Catálogo. Todos os direitos reservados.</p>
+  <p class="footer-copy">© <span id="ano-atual"></span> Atlântica Natural. Todos os direitos reservados.</p>
 </footer>
 
 <a class="whatsapp-flutuante" href="https://wa.me/5542999808084" target="_blank" rel="noopener noreferrer" aria-label="Falar pelo WhatsApp">
@@ -155,6 +157,21 @@
         <p class="modal-produto-descricao" id="modal-produto-descricao"></p>
         <p class="modal-produto-preco" id="modal-produto-preco"></p>
       </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal institucional -->
+<div class="modal-produto" id="modal-sobre-nos" hidden aria-hidden="true">
+  <div class="modal-produto-caixa modal-sobre-nos-caixa" role="dialog" aria-modal="true" aria-labelledby="modal-sobre-nos-titulo">
+    <button type="button" class="modal-produto-fechar" id="modal-sobre-nos-fechar" aria-label="Fechar Sobre nós">&times;</button>
+    <div class="modal-sobre-nos-conteudo">
+      <span class="modal-produto-categoria">Atlântica Natural</span>
+      <h2 id="modal-sobre-nos-titulo">Sobre nós</h2>
+      <p>Fundada em 2020, em meio à pandemia, nossa loja nasceu com um propósito claro: oferecer saúde, bem-estar e qualidade de vida por meio de soluções naturais e inovadoras. Desde o início, destacamo-nos como pioneiros na área da <strong>ozonioterapia</strong>, consolidando-nos como <strong>líderes no mercado nacional de produtos ozonizados</strong>.</p>
+      <p>Somos especializados na <strong>comercialização de suplementos e cosméticos ozonizados</strong>, unindo tecnologia, ciência e natureza para proporcionar resultados reais e eficazes. Cada produto em nosso portfólio é cuidadosamente selecionado, com foco na pureza, na eficácia e na segurança, atendendo às necessidades de quem busca uma vida mais equilibrada, saudável e com mais vitalidade.</p>
+      <p>Acreditamos no poder transformador da ozonioterapia e trabalhamos todos os dias com comprometimento, ética e paixão para levar os melhores produtos aos nossos clientes. Nossa missão é promover o bem-estar físico e emocional, por meio de alternativas naturais e conscientes, que respeitam o corpo e o meio ambiente.</p>
+      <p>Seja bem-vindo(a) à nossa loja. Aqui, você encontra <strong>mais que produtos — você encontra cuidado, inovação e confiança</strong>.</p>
     </div>
   </div>
 </div>

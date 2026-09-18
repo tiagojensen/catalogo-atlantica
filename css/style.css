@@ -120,6 +120,7 @@ button { font-family: inherit; }
   border: 1px solid var(--ink);
   border-radius: var(--raio);
 }
+.nav-sobre-nos { display: none; }
 .nav-cta:hover { background: var(--ink); color: var(--paper); }
 
 .nav-dropdown { position: relative; }
@@ -451,6 +452,20 @@ body.modal-aberto { overflow: hidden; }
   font-size: 1.25rem;
 }
 
+.modal-sobre-nos-caixa { width: min(840px, 100%); }
+.modal-sobre-nos-conteudo { padding: 0.5rem 2.5rem 0.5rem 0; }
+.modal-sobre-nos-conteudo h2 {
+  margin: 0.45rem 0 1rem;
+  font-size: clamp(1.45rem, 3vw, 2rem);
+  line-height: 1.15;
+}
+.modal-sobre-nos-conteudo p {
+  margin: 0 0 1rem;
+  color: var(--ink-soft);
+  line-height: 1.7;
+}
+.modal-sobre-nos-conteudo p:last-child { margin-bottom: 0; }
+
 .carregando { text-align: center; padding: 4rem 1.5rem; color: var(--ink-soft); }
 
 /* =========================================================
@@ -485,11 +500,36 @@ body.modal-aberto { overflow: hidden; }
   grid-template-columns: 2fr 1fr 1fr;
   gap: 2rem;
 }
-.footer-logo { margin-bottom: 0.75rem; }
+.footer-bloco.footer-identidade {
+  flex-direction: row;
+  align-items: center;
+  gap: 1.25rem;
+}
+.footer-logo-imagem {
+  width: 142px;
+  height: auto;
+  flex: 0 0 auto;
+}
+.footer-institucional {
+  margin: 0;
+  line-height: 1.65;
+}
 .footer-bloco { display: flex; flex-direction: column; gap: 0.6rem; }
 .footer-bloco h3 { font-size: 0.9rem; margin-bottom: 0.2rem; }
 .footer-bloco a, .footer-bloco p { color: var(--ink-soft); font-size: 0.9rem; }
 .footer-bloco a:hover { color: var(--gold); }
+.footer-link-botao {
+  width: fit-content;
+  padding: 0;
+  color: var(--ink-soft);
+  background: none;
+  border: 0;
+  font: inherit;
+  font-size: 0.9rem;
+  cursor: pointer;
+  text-align: left;
+}
+.footer-link-botao:hover { color: var(--gold); }
 .whatsapp-flutuante {
   position: fixed;
   right: 1.25rem;
@@ -583,6 +623,7 @@ body.modal-aberto { overflow: hidden; }
   .main-nav.aberto { display: flex; }
   .nav-link { padding: 0.85rem 0; border-bottom: 1px solid var(--line); }
   .nav-cta { border: none; text-align: left; padding: 0.85rem 0; }
+  .nav-sobre-nos { display: block; }
   .nav-dropdown-menu {
     position: static;
     transform: none;
@@ -604,6 +645,7 @@ body.modal-aberto { overflow: hidden; }
 
   .produtos-grid { grid-template-columns: repeat(2, 1fr); gap: 1.25rem 1rem; }
   .footer-inner { grid-template-columns: 1fr; }
+  .footer-identidade { align-items: flex-start; }
 }
 
 @media (max-width: 480px) {

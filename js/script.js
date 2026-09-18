@@ -19,6 +19,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   iniciarMenuMobile();
   iniciarDropdowns();
   iniciarModalProduto();
+  iniciarModalSobreNos();
 
   try {
     const [produtos, categorias] = await Promise.all([
@@ -209,6 +210,41 @@ function abrirModalProduto(produto, categoria) {
 
 function fecharModalProduto() {
   const modal = document.getElementById("modal-produto");
+  modal.hidden = true;
+  modal.setAttribute("aria-hidden", "true");
+  document.body.classList.remove("modal-aberto");
+}
+
+/* =========================================================
+   MODAL SOBRE NÓS
+   ========================================================= */
+function iniciarModalSobreNos() {
+  const modal = document.getElementById("modal-sobre-nos");
+  const botoesAbrir = document.querySelectorAll(".abrir-sobre-nos");
+  const botaoFechar = document.getElementById("modal-sobre-nos-fechar");
+
+  if (!modal || !botoesAbrir.length || !botaoFechar) return;
+
+  botoesAbrir.forEach((botao) => botao.addEventListener("click", abrirModalSobreNos));
+  botaoFechar.addEventListener("click", fecharModalSobreNos);
+  modal.addEventListener("click", (evento) => {
+    if (evento.target === modal) fecharModalSobreNos();
+  });
+  document.addEventListener("keydown", (evento) => {
+    if (evento.key === "Escape" && !modal.hidden) fecharModalSobreNos();
+  });
+}
+
+function abrirModalSobreNos() {
+  const modal = document.getElementById("modal-sobre-nos");
+  modal.hidden = false;
+  modal.setAttribute("aria-hidden", "false");
+  document.body.classList.add("modal-aberto");
+  document.getElementById("modal-sobre-nos-fechar").focus();
+}
+
+function fecharModalSobreNos() {
+  const modal = document.getElementById("modal-sobre-nos");
   modal.hidden = true;
   modal.setAttribute("aria-hidden", "true");
   document.body.classList.remove("modal-aberto");

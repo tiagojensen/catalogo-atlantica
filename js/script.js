@@ -43,7 +43,7 @@ async function buscarJSON(caminho) {
 }
 
 /* =========================================================
-   MENU (mobile + dropdown "Produtos")
+   MENU (mobile + dropdowns)
    ========================================================= */
 function iniciarMenuMobile() {
   const botao = document.getElementById("nav-toggle");
@@ -75,24 +75,23 @@ function iniciarDropdowns() {
 }
 
 function montarMenusCategorias(categorias) {
-  ["menu-catalogos", "menu-categorias"].forEach((idMenu) => {
-    const menu = document.getElementById(idMenu);
-    categorias.forEach((categoria) => {
-      const link = document.createElement("a");
-      link.href = `#categoria-${categoria.id}`;
-      link.textContent = categoria.nome;
-      link.addEventListener("click", () => {
-        document.querySelectorAll(".nav-dropdown-menu").forEach((menuDoSite) => {
-          menuDoSite.classList.remove("aberto");
-        });
-        document.querySelectorAll(".nav-dropdown-trigger").forEach((gatilhoDoSite) => {
-          gatilhoDoSite.setAttribute("aria-expanded", "false");
-        });
-        document.getElementById("main-nav").classList.remove("aberto");
-        document.getElementById("nav-toggle").setAttribute("aria-expanded", "false");
+  const menu = document.getElementById("menu-categorias");
+
+  categorias.forEach((categoria) => {
+    const link = document.createElement("a");
+    link.href = `#categoria-${categoria.id}`;
+    link.textContent = categoria.nome;
+    link.addEventListener("click", () => {
+      document.querySelectorAll(".nav-dropdown-menu").forEach((menuDoSite) => {
+        menuDoSite.classList.remove("aberto");
       });
-      menu.appendChild(link);
+      document.querySelectorAll(".nav-dropdown-trigger").forEach((gatilhoDoSite) => {
+        gatilhoDoSite.setAttribute("aria-expanded", "false");
+      });
+      document.getElementById("main-nav").classList.remove("aberto");
+      document.getElementById("nav-toggle").setAttribute("aria-expanded", "false");
     });
+    menu.appendChild(link);
   });
 }
 

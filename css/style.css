@@ -609,6 +609,14 @@ body.modal-aberto { overflow: hidden; }
 }
 
 @media (max-width: 768px) {
+  .empresa-abertura-imagem {
+    width: 100vw;
+    max-width: none;
+    margin-left: calc(50% - 50vw);
+    margin-right: 0;
+    border-radius: 0;
+  }
+
   .categoria-secao {
     padding-left: 0;
     padding-right: 0;

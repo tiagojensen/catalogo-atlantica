@@ -13,5 +13,12 @@
     "banners": [
       "imagens/produtos/oleos_essenciais/banners/banner_01.png"
     ]
+  },
+  {
+    "id": "wave-global",
+    "nome": "Wave Global",
+    "banners": [
+      "imagens/produtos/wave/banners/banner_01.png"
+    ]
   }
 ]

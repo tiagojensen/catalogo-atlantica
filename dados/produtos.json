@@ -196,5 +196,82 @@
     "descricaoCompleta": "Este óleo é muito refrescante e revigorante, trazendo conforto e equilíbrio em situações de mal-estar como enjoo e ânsia de vômito. Na pele, apresenta efeito adelgaçante e pode auxiliar na redução de inchaço e tensões musculares. No ambiente, promove sensação de frescor, expansão e renovação.",
     "destaque": false,
     "fonte": "https://atlanticanaturalbr.com.br/product/oleos-essenciais-menta-piperita/"
+  },
+  {
+    "id": "wave-001",
+    "nome": "WAVE GREEN EM PÓ",
+    "categoria": "wave-global",
+    "preco": 250.00,
+    "imagem": "imagens/produtos/wave/green.png",
+    "descricao": "Spirulina em pó rica em proteínas, vitaminas, minerais e antioxidantes.",
+    "descricaoCompleta": "A Spirulina, uma microalga de nome Arthrospira platensis, é cultivada nas águas puras do subsolo da Fazenda Tamanduá, garantindo a ausência de contaminação por pesticidas ou metais pesados. Essa cianobactéria se desenvolve em lugares com forte insolação, alto calor e dias longos, típicos do clima do semiárido paraibano. Pode ser adicionada a sucos, vitaminas, smoothies e outras receitas, conforme as orientações do fabricante.",
+    "destaque": false,
+    "fonte": "https://atlanticanaturalbr.com.br/product/green-spirulina-em-po-beneficios/"
+  },
+  {
+    "id": "wave-002",
+    "nome": "WAVEGREEN + C EM CÁPSULAS",
+    "categoria": "wave-global",
+    "preco": 199.98,
+    "imagem": "imagens/produtos/wave/green + c.png",
+    "descricao": "Suplemento vegano de spirulina e vitamina C, nutricionalmente rico e livre de gorduras e carboidratos.",
+    "descricaoCompleta": "Vegana, nutricionalmente rica e livre de gorduras e carboidratos. A Spirulina, uma cianobactéria, é considerada um superalimento por ser composta por mais de 50 nutrientes. A fórmula combina spirulina e vitamina C, descritas pelo fabricante como fontes de suporte nutricional e ação antioxidante. Use conforme as orientações do rótulo e do fabricante.",
+    "destaque": false,
+    "fonte": "https://atlanticanaturalbr.com.br/product/wavegreen-c-em-capsulas/"
+  },
+  {
+    "id": "wave-003",
+    "nome": "Wave Calm",
+    "categoria": "wave-global",
+    "preco": 119.98,
+    "imagem": "imagens/produtos/wave/calm.png",
+    "descricao": "Suplemento natural voltado ao relaxamento físico e mental e ao apoio à qualidade do sono.",
+    "descricaoCompleta": "Ajuda a modular e organizar as atividades cerebrais, promove o relaxamento físico e mental e contribui para a redução da apneia, segundo a descrição do fabricante. É apresentado como um produto natural que não causa dependência e voltado ao apoio do relaxamento e do sono. Use conforme as orientações do rótulo e procure orientação profissional quando necessário.",
+    "destaque": false,
+    "fonte": "https://atlanticanaturalbr.com.br/product/calm-para-ansiedade-e-sono/"
+  },
+  {
+    "id": "wave-004",
+    "nome": "DETOX + SB CHÁ",
+    "categoria": "wave-global",
+    "preco": 282.00,
+    "imagem": "imagens/produtos/wave/detox + sb.png",
+    "descricao": "Chá com função laxativa e descrição voltada ao apoio digestivo, efeito termogênico e ação antioxidante.",
+    "descricaoCompleta": "Segundo o fabricante, possui função laxativa, facilita a eliminação do bolo fecal, melhora as atividades do fígado, pâncreas e rins, apresenta efeito termogênico e ação antioxidante, fortalece a imunidade e ajuda a ativar a dopamina e a serotonina. Promove também o rejuvenescimento celular, conforme a descrição do produto. Use somente de acordo com as orientações do rótulo.",
+    "destaque": false,
+    "fonte": "https://atlanticanaturalbr.com.br/product/detox-sb-cha/"
+  },
+  {
+    "id": "wave-005",
+    "nome": "WAVE DEXA PLUS",
+    "categoria": "wave-global",
+    "preco": 480.00,
+    "imagem": "imagens/produtos/wave/dexa plus.png",
+    "descricao": "Produto descrito pelo fabricante com ação antioxidante e anti-inflamatória e suporte ao metabolismo.",
+    "descricaoCompleta": "A descrição do fabricante atribui ao Wave Dexa Plus estímulo de proteínas protetoras, ação antioxidante e anti-inflamatória, aceleração do metabolismo da gordura, redução do estresse e apoio às funções cerebrais e musculares. Também descreve suporte à saúde dos vasos sanguíneos e à função pancreática, além de redução da resistência à insulina.",
+    "destaque": false,
+    "fonte": "https://atlanticanaturalbr.com.br/product/wave-dexa-plus/"
+  },
+  {
+    "id": "wave-006",
+    "nome": "WAVE SAÚDE DA MULHER",
+    "categoria": "wave-global",
+    "preco": 165.00,
+    "imagem": "imagens/produtos/wave/saude da mulher.png",
+    "descricao": "Produto descrito pelo fabricante para apoio ao equilíbrio hormonal, à vitalidade e ao bem-estar feminino.",
+    "descricaoCompleta": "Segundo a descrição do fabricante, o Wave Saúde da Mulher auxilia no equilíbrio hormonal, especialmente para mulheres em idade fértil ou na menopausa. Também é descrito como apoio à redução de inflamações e dores, à vitalidade e aos níveis de energia. Use conforme as orientações do rótulo e procure orientação profissional quando necessário.",
+    "destaque": false,
+    "fonte": "https://atlanticanaturalbr.com.br/product/saude-da-mulher/"
+  },
+  {
+    "id": "wave-007",
+    "nome": "WAVE SAÚDE E VITALIDADE",
+    "categoria": "wave-global",
+    "preco": 190.00,
+    "imagem": "imagens/produtos/wave/saude e vitalidade.png",
+    "descricao": "Produto descrito pelo fabricante para apoio à energia, à imunidade, à força e à vitalidade.",
+    "descricaoCompleta": "A descrição do fabricante atribui ao Wave Saúde e Vitalidade propriedades anti-inflamatórias e apoio ao controle dos níveis de açúcar no sangue. Também descreve potencial suporte à função imunológica, à energia, à resistência, à força e à massa muscular, além de potencial apoio à testosterona e à libido.",
+    "destaque": false,
+    "fonte": "https://atlanticanaturalbr.com.br/product/wave-saude-e-vitalidade/"
   }
 ]

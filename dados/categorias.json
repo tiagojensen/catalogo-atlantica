@@ -20,5 +20,12 @@
     "banners": [
       "imagens/produtos/wave/banners/banner_01.png"
     ]
+  },
+  {
+    "id": "chas",
+    "nome": "Chás",
+    "banners": [
+      "imagens/produtos/chas/banners/banner_01.png"
+    ]
   }
 ]

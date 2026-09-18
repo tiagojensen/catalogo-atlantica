@@ -273,5 +273,60 @@
     "descricaoCompleta": "A descrição do fabricante atribui ao Wave Saúde e Vitalidade propriedades anti-inflamatórias e apoio ao controle dos níveis de açúcar no sangue. Também descreve potencial suporte à função imunológica, à energia, à resistência, à força e à massa muscular, além de potencial apoio à testosterona e à libido.",
     "destaque": false,
     "fonte": "https://atlanticanaturalbr.com.br/product/wave-saude-e-vitalidade/"
+  },
+  {
+    "id": "cha-001",
+    "nome": "NIGHT CHÁ",
+    "categoria": "chas",
+    "preco": 142.98,
+    "imagem": "imagens/produtos/chas/night.jpg",
+    "descricao": "Infusão de ervas selecionadas, desenvolvida para apoiar o relaxamento e uma boa noite de sono.",
+    "descricaoCompleta": "Night Chá é uma bebida desenvolvida para ajudar a promover uma boa noite de sono. É uma infusão de ervas cuidadosamente selecionadas, conhecidas por suas propriedades relaxantes e calmantes. Segundo a descrição do fabricante, pode auxiliar no alívio do estresse e da ansiedade, na qualidade do sono, na tranquilidade, na digestão e na redução de inchaços.",
+    "destaque": false,
+    "fonte": "https://atlanticanaturalbr.com.br/product/night-cha/"
+  },
+  {
+    "id": "cha-002",
+    "nome": "CHÁ VERDE COM GENGIBRE",
+    "categoria": "chas",
+    "preco": 142.98,
+    "imagem": "imagens/produtos/chas/gengibre.jpeg",
+    "descricao": "Combinação de chá verde e gengibre com sabor marcante, ação antioxidante e apoio à digestão.",
+    "descricaoCompleta": "O Chá Verde com Gengibre é uma combinação de ervas que pode ser consumida quente ou fria. O chá verde, derivado da Camellia sinensis, é conhecido por ser rico em antioxidantes, como catequinas. O gengibre possui propriedades associadas à digestão e ao alívio de desconfortos gástricos. A página do fabricante também descreve apoio ao metabolismo, à saúde do coração e à função cognitiva.",
+    "destaque": false,
+    "fonte": "https://atlanticanaturalbr.com.br/product/cha-verde-com-gengibre/"
+  },
+  {
+    "id": "cha-003",
+    "nome": "SLIM CHÁ",
+    "categoria": "chas",
+    "preco": 59.98,
+    "imagem": "imagens/produtos/chas/slim.jpg",
+    "descricao": "Mistura de ervas descrita para apoio à digestão, ao metabolismo e à redução da retenção de líquidos.",
+    "descricaoCompleta": "O Slim Chá é uma mistura de diferentes ervas e ingredientes naturais, incluindo chá verde, cavalinha, hibisco, camomila e menta. Segundo o fabricante, possui ação diurética e desintoxicante, pode estimular o metabolismo, auxiliar na regulação do trânsito intestinal e contribuir para a digestão. O emagrecimento saudável depende de alimentação equilibrada, atividade física e orientação profissional.",
+    "destaque": false,
+    "fonte": "https://atlanticanaturalbr.com.br/product/slim-cha/"
+  },
+  {
+    "id": "cha-004",
+    "nome": "THERMO HEAT",
+    "categoria": "chas",
+    "preco": 142.98,
+    "imagem": "imagens/produtos/chas/thermo.jpg",
+    "descricao": "Bebida com ervas e ingredientes naturais, desenvolvida para apoiar energia, disposição e metabolismo.",
+    "descricaoCompleta": "O Thermo Heat é uma bebida formulada para fornecer energia e auxiliar na queima de calorias. É uma combinação de ervas e ingredientes naturais cuidadosamente selecionados para promover aumento do metabolismo e estimular o corpo. O catálogo de produtos informa a presença de pimenta vermelha, chá verde, hibisco, guaraná, laranja amarga, gengibre e canela. Use conforme as orientações do rótulo.",
+    "destaque": false,
+    "fonte": "https://atlanticanaturalbr.com.br/product/thermo-heat/"
+  },
+  {
+    "id": "cha-005",
+    "nome": "ATL OFF",
+    "categoria": "chas",
+    "preco": 119.98,
+    "imagem": "imagens/produtos/chas/ATL.jpg",
+    "descricao": "Sachês em pó com melatonina, triptofano, inositol, magnésio, vitaminas B6 e B9 e extratos naturais.",
+    "descricaoCompleta": "O ATL OFF é apresentado em sachês de pó sabor maracujá. A composição publicada no catálogo de atendimento inclui melatonina, triptofano, inositol, magnésio, vitaminas B6 e B9 e extratos naturais, com proposta de complementar a rotina de relaxamento e qualidade do sono. A página oficial do produto não disponibiliza uma descrição detalhada; use conforme as orientações da embalagem.",
+    "destaque": false,
+    "fonte": "https://atlanticanaturalbr.com.br/product/atl-off/"
   }
 ]

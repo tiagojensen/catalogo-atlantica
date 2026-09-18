@@ -27,5 +27,12 @@
     "banners": [
       "imagens/produtos/chas/banners/banner_01.png"
     ]
+  },
+  {
+    "id": "academia",
+    "nome": "Academia",
+    "banners": [
+      "imagens/produtos/academia/banners/banner_01.png"
+    ]
   }
 ]

@@ -328,5 +328,115 @@
     "descricaoCompleta": "O ATL OFF é apresentado em sachês de pó sabor maracujá. A composição publicada no catálogo de atendimento inclui melatonina, triptofano, inositol, magnésio, vitaminas B6 e B9 e extratos naturais, com proposta de complementar a rotina de relaxamento e qualidade do sono. A página oficial do produto não disponibiliza uma descrição detalhada; use conforme as orientações da embalagem.",
     "destaque": false,
     "fonte": "https://atlanticanaturalbr.com.br/product/atl-off/"
+  },
+  {
+    "id": "academia-001",
+    "nome": "BCAA",
+    "categoria": "academia",
+    "preco": 119.98,
+    "imagem": "imagens/produtos/academia/bcaa.jpg",
+    "descricao": "Suplemento de aminoácidos de cadeia ramificada para complementar a rotina esportiva.",
+    "descricaoCompleta": "BCAA é a sigla em inglês para aminoácidos de cadeia ramificada. A fórmula reúne leucina, isoleucina e valina, aminoácidos associados à rotina de exercícios, ao suporte muscular e à recuperação pós-treino. Use conforme as orientações do rótulo e de um profissional de saúde.",
+    "destaque": false,
+    "fonte": "https://atlanticanaturalbr.com.br/product/bcaa/"
+  },
+  {
+    "id": "academia-002",
+    "nome": "PICOLINATO DE CROMO",
+    "categoria": "academia",
+    "preco": 119.98,
+    "imagem": "imagens/produtos/academia/picolinato.jpg",
+    "descricao": "Suplemento alimentar de picolinato de cromo para complementar a ingestão desse mineral.",
+    "descricaoCompleta": "O Picolinato de Cromo é um suplemento alimentar indicado para pessoas com deficiência do mineral. A página do fabricante também associa o produto ao controle da insulina, ao apoio ao controle de peso e ao aumento da massa magra. Consulte um profissional de saúde antes de utilizar suplementos com finalidade específica.",
+    "destaque": false,
+    "fonte": "https://atlanticanaturalbr.com.br/product/picolinato-de-cromo/"
+  },
+  {
+    "id": "academia-003",
+    "nome": "ZMA",
+    "categoria": "academia",
+    "preco": 119.98,
+    "imagem": "imagens/produtos/academia/zma.jpg",
+    "descricao": "Combinação de zinco, magnésio e vitamina B6 para complementar a rotina de exercícios.",
+    "descricaoCompleta": "ZMA é um suplemento que combina zinco, magnésio e vitamina B6. Segundo a descrição do fabricante, esses nutrientes podem complementar a reposição nutricional durante períodos de atividade física e desgaste. O consumo deve seguir as orientações do rótulo e de um profissional de saúde.",
+    "destaque": false,
+    "fonte": "https://atlanticanaturalbr.com.br/product/zma/"
+  },
+  {
+    "id": "academia-004",
+    "nome": "MORO TREINY",
+    "categoria": "academia",
+    "preco": 153.98,
+    "imagem": "imagens/produtos/academia/moro.jpg",
+    "descricao": "Suplemento à base de Laranja Moro, fruta cítrica de origem italiana rica em antocianinas.",
+    "descricaoCompleta": "A Laranja Moro é uma fruta proveniente da Sicília, na Itália. Ela possui interior avermelhado por conter antocianina, um componente antioxidante que pigmenta vegetais. Segundo a página do fabricante, reúne benefícios associados às frutas cítricas e à antocianina, além de ser apresentada como apoio ao emagrecimento e à qualidade de vida.",
+    "destaque": false,
+    "fonte": "https://atlanticanaturalbr.com.br/product/moro-treiny/"
+  },
+  {
+    "id": "academia-005",
+    "nome": "CREATINA MASTIGÁVEL CHICLETE",
+    "categoria": "academia",
+    "preco": 153.78,
+    "imagem": "imagens/produtos/academia/creatina mastigavel chiclete.png",
+    "descricao": "Creatina mastigável com sabor de chiclete, prática para consumir no dia a dia.",
+    "descricaoCompleta": "A Creatina Mastigável é uma forma prática e saborosa de suplementar creatina no dia a dia. A fórmula foi desenvolvida para oferecer praticidade, energia, força e suporte muscular, sendo uma opção conveniente para atletas e pessoas que desejam complementar o desempenho físico e a recuperação pós-treino.",
+    "destaque": false,
+    "fonte": "https://atlanticanaturalbr.com.br/product/creatina-mastigavel-chiclete/"
+  },
+  {
+    "id": "academia-006",
+    "nome": "CREATINA MASTIGÁVEL MAÇÃ VERDE",
+    "categoria": "academia",
+    "preco": 153.78,
+    "imagem": "imagens/produtos/academia/creatina mastigavel maca verde.png",
+    "descricao": "Creatina mastigável sabor maçã verde, prática para suplementar antes ou depois dos treinos.",
+    "descricaoCompleta": "A Creatina Mastigável sabor Maçã Verde é uma forma prática e saborosa de suplementar creatina. A fórmula é descrita pelo fabricante como uma opção conveniente para apoiar energia, força, desempenho físico e recuperação pós-treino, sem necessidade de misturar ou diluir.",
+    "destaque": false,
+    "fonte": "https://atlanticanaturalbr.com.br/product/creatina-mastigavel-maca-verde/"
+  },
+  {
+    "id": "academia-007",
+    "nome": "CAFÉ PRÉ TREINO",
+    "categoria": "academia",
+    "preco": 179.98,
+    "imagem": "imagens/produtos/academia/cafe.jpg",
+    "descricao": "Bebida para consumo antes do treino, desenvolvida para apoiar energia e disposição.",
+    "descricaoCompleta": "O Café Pré-Treino é uma bebida indicada para consumo antes dos exercícios, com proposta de aumentar a energia e a disposição para a rotina esportiva. Utilize conforme as orientações da embalagem, especialmente em relação à quantidade e ao horário de consumo.",
+    "destaque": false,
+    "fonte": "https://atlanticanaturalbr.com.br/product/cafe-pre-treino/"
+  },
+  {
+    "id": "academia-008",
+    "nome": "CREATINA MASTIGÁVEL PIÑA COLADA",
+    "categoria": "academia",
+    "preco": 159.80,
+    "imagem": "imagens/produtos/academia/creatina mastigavel pina colada.jpg",
+    "descricao": "Creatina mastigável sabor Piña Colada, prática para complementar a rotina de treinos.",
+    "descricaoCompleta": "A Creatina Mastigável sabor Piña Colada é uma forma prática e saborosa de suplementar creatina no dia a dia. Segundo o fabricante, oferece energia, força e suporte muscular de maneira conveniente, sendo adequada para atletas e pessoas que desejam complementar o desempenho físico e a recuperação pós-treino.",
+    "destaque": false,
+    "fonte": "https://atlanticanaturalbr.com.br/product/creatina-mastigavel-pina-colada/"
+  },
+  {
+    "id": "academia-009",
+    "nome": "GLUTAMINA EM PÓ",
+    "categoria": "academia",
+    "preco": 189.98,
+    "imagem": "imagens/produtos/academia/glutamina.jpg",
+    "descricao": "Glutamina em pó para complementar a recuperação muscular e o suporte nutricional pós-treino.",
+    "descricaoCompleta": "Glutamina em pó apresentada como suplemento alimentar para complementar a ingestão desse aminoácido em rotinas de treino. As informações de catálogo associam o produto à recuperação muscular, ao suporte da imunidade e ao bem-estar após exercícios intensos. Use conforme as orientações da embalagem e de um profissional de saúde.",
+    "destaque": false,
+    "fonte": "https://atlanticanaturalbr.com.br/product/glutamina-em-po/"
+  },
+  {
+    "id": "academia-010",
+    "nome": "PRÉ TREINO PONCHE DE FRUTAS EM PÓ",
+    "categoria": "academia",
+    "preco": 189.98,
+    "imagem": "imagens/produtos/academia/pre treino ponche de frutas.jpg",
+    "descricao": "Pré-treino em pó sabor ponche de frutas, desenvolvido para apoiar energia, foco e disposição.",
+    "descricaoCompleta": "O ATL Natural Pré-Treino sabor Ponche de Frutas é um suplemento em pó desenvolvido para quem busca energia, foco e disposição durante os treinos. As informações de catálogo descrevem uma fórmula à base de frutas e vegetais, com ingredientes como beterraba, melancia e palatinose, voltada a uma liberação gradual de energia e ao apoio da performance. Use conforme o rótulo.",
+    "destaque": false,
+    "fonte": "https://atlanticanaturalbr.com.br/product/pre-treino-ponche-de-frutas-em-po/"
   }
 ]

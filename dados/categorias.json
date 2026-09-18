@@ -3,8 +3,15 @@
     "id": "oleos-ozonizados",
     "nome": "Óleos Ozonizados",
     "banners": [
-      "imagens/produtos/oleos_ozonizados/banners/oleos_ozonizados.png",
-      "imagens/produtos/oleos_ozonizados/banners/oleos_ozonizados2.jfif"
+      "imagens/produtos/oleos_ozonizados/banners/banner_01.png",
+      "imagens/produtos/oleos_ozonizados/banners/banner_02.jfif"
+    ]
+  },
+  {
+    "id": "oleos-essenciais",
+    "nome": "Óleos Essenciais",
+    "banners": [
+      "imagens/produtos/oleos_essenciais/banners/banner_01.png"
     ]
   }
 ]

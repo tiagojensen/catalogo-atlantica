@@ -108,5 +108,93 @@
     "descricaoCompleta": "O Óleo Hialurônico Ozonizado possui benefícios descritos como hidratação profunda, redução de rugas e linhas de expressão, reparação da pele e ação antioxidante e anti-inflamatória.",
     "destaque": false,
     "fonte": "https://atlanticanaturalbr.com.br/product/oleo-hialuronico-ozonizado/"
+  },
+  {
+    "id": "essencial-001",
+    "nome": "ÓLEOS ESSENCIAIS ALECRIM",
+    "categoria": "oleos-essenciais",
+    "preco": 179.98,
+    "imagem": "imagens/produtos/oleos_essenciais/alecrim.jpeg",
+    "descricao": "Óleo essencial de alecrim com aroma marcante, associado à saúde, ao bem-estar e à sensação de vitalidade.",
+    "descricaoCompleta": "Conhecido por seus diversos benefícios à saúde e também por seu aroma inconfundível, o Óleo Essencial de Alecrim é um grande aliado para a saúde e bem-estar do dia a dia. Natural do Mediterrâneo e da Ásia, o alecrim é um arbusto perene, caracterizado por suas folhas estreitas e aromáticas.",
+    "destaque": false,
+    "fonte": "https://atlanticanaturalbr.com.br/product/oleos-essenciais-alecrim/"
+  },
+  {
+    "id": "essencial-002",
+    "nome": "ÓLEOS ESSENCIAIS EUCALIPTO",
+    "categoria": "oleos-essenciais",
+    "preco": 142.98,
+    "imagem": "imagens/produtos/oleos_essenciais/eucalipto.jpeg",
+    "descricao": "Óleo essencial de eucalipto com aroma fresco e marcante, ideal para trazer sensação de frescor e renovação.",
+    "descricaoCompleta": "Óleo essencial de eucalipto com aroma fresco e marcante, associado à sensação de limpeza, frescor e renovação. Pode ser utilizado em práticas de aromaterapia e na aromatização de ambientes, sempre seguindo as orientações de uso do fabricante.",
+    "destaque": false,
+    "fonte": "https://atlanticanaturalbr.com.br/product/oleos-essenciais-eucalipto/"
+  },
+  {
+    "id": "essencial-003",
+    "nome": "ÓLEOS ESSENCIAIS GERÂNIO",
+    "categoria": "oleos-essenciais",
+    "preco": 209.80,
+    "imagem": "imagens/produtos/oleos_essenciais/geranio.jpeg",
+    "descricao": "Óleo essencial de gerânio com aroma floral, pensado para momentos de equilíbrio e cuidado na rotina.",
+    "descricaoCompleta": "O Óleo Essencial de Gerânio apresenta um aroma floral e marcante, associado a momentos de equilíbrio e bem-estar. É uma opção versátil para aromaterapia e perfumação de ambientes, devendo ser utilizado conforme as orientações de uso do fabricante.",
+    "destaque": false,
+    "fonte": "https://atlanticanaturalbr.com.br/product/oleos-essenciais-geranio/"
+  },
+  {
+    "id": "essencial-004",
+    "nome": "ÓLEOS ESSENCIAIS LARANJA DOCE",
+    "categoria": "oleos-essenciais",
+    "preco": 142.98,
+    "imagem": "imagens/produtos/oleos_essenciais/laranja_doce.jpeg",
+    "descricao": "Óleo essencial de laranja doce com aroma cítrico, energizante e revigorante.",
+    "descricaoCompleta": "ÓLEO ESSENCIAL LARANJA DOCE 10ML. Nome científico: Citrus Sinensis. Origem: Brasil. Extração por prensagem a frio da casca do fruto maduro. No aspecto emocional, é descrito como energizante e revigorante. No uso físico, possui ação antisséptica, antiespasmódica, analgésica e antiviral. Em aplicações cosméticas, pode ser usado em massagens para estimular a circulação sanguínea e o colágeno da pele.",
+    "destaque": false,
+    "fonte": "https://atlanticanaturalbr.com.br/product/oleos-essenciais-laranja-doce/"
+  },
+  {
+    "id": "essencial-005",
+    "nome": "ÓLEOS ESSENCIAIS LAVANDA",
+    "categoria": "oleos-essenciais",
+    "preco": 142.98,
+    "imagem": "imagens/produtos/oleos_essenciais/lavanda.jpeg",
+    "descricao": "Óleo essencial de lavanda com aroma delicado, associado à calma, equilíbrio e sensação de limpeza.",
+    "descricaoCompleta": "A Lavanda Francesa é um óleo essencial simbólico, precursor nos estudos de aromaterapia. Acalma e equilibra razão e emoção. O nome lavanda vem da palavra lavare, que significa lavar e limpar.",
+    "destaque": false,
+    "fonte": "https://atlanticanaturalbr.com.br/product/oleos-essenciais-lavanda/"
+  },
+  {
+    "id": "essencial-006",
+    "nome": "ÓLEOS ESSENCIAIS LIMÃO SICILIANO",
+    "categoria": "oleos-essenciais",
+    "preco": 142.98,
+    "imagem": "imagens/produtos/oleos_essenciais/limao_siciliano.jpeg",
+    "descricao": "Óleo essencial de limão siciliano com aroma cítrico, vibrante e refrescante.",
+    "descricaoCompleta": "ÓLEO ESSENCIAL LIMÃO SICILIANO 10ML. Nome científico: Citrus limon. Extraído por prensagem a frio da casca do fruto, possui aroma cítrico vibrante e marcante. É associado a uma sensação energizante e refrescante, podendo estimular foco, concentração e ânimo em práticas de aromaterapia. Por ser fotossensibilizante, recomenda-se atenção às orientações de uso do fabricante.",
+    "destaque": false,
+    "fonte": "https://atlanticanaturalbr.com.br/product/oleos-essenciais-limao-siciliano/"
+  },
+  {
+    "id": "essencial-007",
+    "nome": "ÓLEOS ESSENCIAIS MELALEUCA",
+    "categoria": "oleos-essenciais",
+    "preco": 142.98,
+    "imagem": "imagens/produtos/oleos_essenciais/melaleuca.jpeg",
+    "descricao": "Óleo essencial de melaleuca com aroma canforado e propriedades associadas ao cuidado da pele.",
+    "descricaoCompleta": "O Óleo Essencial de Melaleuca é utilizado há centenas de anos por aborígenes australianos. É eficaz e benéfico para a pele, com propriedades anti-inflamatórias, cicatrizantes e bactericidas. Oferece sensação de conforto à pele e possui um agradável aroma canforado.",
+    "destaque": false,
+    "fonte": "https://atlanticanaturalbr.com.br/product/oleos-essenciais-melaleuca/"
+  },
+  {
+    "id": "essencial-008",
+    "nome": "ÓLEOS ESSENCIAIS MENTA PIPERITA",
+    "categoria": "oleos-essenciais",
+    "preco": 142.98,
+    "imagem": "imagens/produtos/oleos_essenciais/menta_piperita.jpeg",
+    "descricao": "Óleo essencial de menta piperita refrescante e revigorante, com aroma de frescor e renovação.",
+    "descricaoCompleta": "Este óleo é muito refrescante e revigorante, trazendo conforto e equilíbrio em situações de mal-estar como enjoo e ânsia de vômito. Na pele, apresenta efeito adelgaçante e pode auxiliar na redução de inchaço e tensões musculares. No ambiente, promove sensação de frescor, expansão e renovação.",
+    "destaque": false,
+    "fonte": "https://atlanticanaturalbr.com.br/product/oleos-essenciais-menta-piperita/"
   }
 ]

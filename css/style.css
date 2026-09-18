@@ -207,12 +207,16 @@ button { font-family: inherit; }
 .produtos-abertura {
   max-width: var(--largura-max);
   margin: 0 auto;
-  padding: 0 1.5rem;
+  padding: 1.15rem 1.5rem;
   border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
   scroll-margin-top: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .produtos-titulo {
-  margin: 1.25rem 0 0.5rem;
+  margin: 0;
   text-transform: none;
   text-align: center;
 }

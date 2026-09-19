@@ -518,6 +518,7 @@ body.modal-aberto { overflow: hidden; }
   color: var(--paper);
   margin-top: var(--espaco-secao);
 }
+.consultor-inicio-mobile { display: none; }
 .consultor-inner {
   max-width: 640px;
   margin: 0 auto;
@@ -649,6 +650,11 @@ body.modal-aberto { overflow: hidden; }
     border-radius: 0;
   }
 
+  .consultor-inicio-mobile {
+    display: block;
+    margin-top: 0;
+  }
+
   .categoria-secao {
     padding-left: 0;
     padding-right: 0;
@@ -694,8 +700,36 @@ body.modal-aberto { overflow: hidden; }
     display: none;
   }
   .main-nav.aberto { display: flex; }
-  .nav-link { padding: 0.85rem 0; border-bottom: 1px solid var(--line); }
-  .nav-cta { border: none; text-align: left; padding: 0.85rem 0; }
+  .main-nav .nav-link {
+    color: var(--ink);
+    background: transparent;
+    text-align: left;
+    width: 100%;
+    padding: 0.85rem 0;
+    border-bottom: 1px solid var(--line);
+  }
+  .main-nav .nav-link:hover,
+  .main-nav .nav-link:focus-visible {
+    color: var(--ink);
+  }
+  .main-nav .nav-cta {
+    margin: 0.45rem 0;
+    padding: 0.75rem 1rem;
+    color: var(--paper);
+    background: var(--ink);
+    border: 1px solid var(--ink);
+    border-radius: var(--raio);
+    box-shadow: 0 6px 16px rgba(33, 38, 31, 0.12);
+    transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  .main-nav .nav-cta:hover,
+  .main-nav .nav-cta:focus-visible {
+    color: var(--paper);
+    background: var(--gold);
+    border-color: var(--gold);
+    box-shadow: 0 8px 20px rgba(184, 135, 46, 0.22);
+    transform: translateY(-1px);
+  }
   .nav-sobre-nos { display: block; }
   .nav-dropdown-menu {
     position: static;
@@ -717,8 +751,11 @@ body.modal-aberto { overflow: hidden; }
   .nav-toggle { display: flex; }
 
   .produtos-grid { grid-template-columns: repeat(2, 1fr); gap: 1.25rem 1rem; }
-  .footer-inner { grid-template-columns: 1fr; }
-  .footer-identidade { align-items: flex-start; }
+  .footer-inner {
+    grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+    align-items: start;
+  }
+  .footer-identidade { display: none; }
 }
 
 @media (max-width: 480px) {

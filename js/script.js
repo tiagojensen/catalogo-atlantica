@@ -275,13 +275,9 @@ function iniciarCarrossel(secaoElemento) {
 
   const wrapper = elementoSwiper.querySelector(".swiper-wrapper");
   const slides = Array.from(wrapper.querySelectorAll(".swiper-slide"));
-  const botaoAnterior = elementoSwiper.querySelector(".swiper-button-prev");
-  const botaoProximo = elementoSwiper.querySelector(".swiper-button-next");
   const paginacao = elementoSwiper.querySelector(".swiper-pagination");
   const quantidadeSlides = elementoSwiper.querySelectorAll(".swiper-slide").length;
   if (quantidadeSlides <= 1) {
-    botaoAnterior.hidden = true;
-    botaoProximo.hidden = true;
     paginacao.hidden = true;
     return;
   }
@@ -328,9 +324,6 @@ function iniciarCarrossel(secaoElemento) {
       atualizarCarrossel();
     }, 4500);
   }
-
-  botaoAnterior.addEventListener("click", () => irParaSlide(indiceAtual - 1));
-  botaoProximo.addEventListener("click", () => irParaSlide(indiceAtual + 1));
 
   function finalizarArraste(posicaoFinal) {
     if (inicioDoArraste === null) return;

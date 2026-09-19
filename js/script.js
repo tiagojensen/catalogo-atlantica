@@ -11,6 +11,10 @@ const formatoMoeda = new Intl.NumberFormat("pt-BR", {
   currency: "BRL",
 });
 
+function precoDeConsultor(preco) {
+  return Number(preco) / 2;
+}
+
 /* =========================================================
    INICIALIZAÇÃO
    ========================================================= */
@@ -174,7 +178,8 @@ function preencherGradeDeProdutos(fragmento, produtosDaCategoria, categoria) {
     card.querySelector(".produto-categoria").textContent = categoria.nome;
     card.querySelector(".produto-nome").textContent = produto.nome;
     card.querySelector(".produto-descricao").textContent = produto.descricao || "";
-    card.querySelector(".produto-preco").textContent = formatoMoeda.format(produto.preco);
+    card.querySelector(".produto-preco-original").textContent = formatoMoeda.format(produto.preco);
+    card.querySelector(".produto-preco-consultor").textContent = formatoMoeda.format(precoDeConsultor(produto.preco));
     card.querySelector(".produto-detalhes-botao").addEventListener("click", () => {
       abrirModalProduto(produto, categoria);
     });
@@ -210,7 +215,8 @@ function abrirModalProduto(produto, categoria) {
   document.getElementById("modal-produto-categoria").textContent = categoria.nome;
   document.getElementById("modal-produto-titulo").textContent = produto.nome;
   document.getElementById("modal-produto-descricao").textContent = descricao;
-  document.getElementById("modal-produto-preco").textContent = formatoMoeda.format(produto.preco);
+  document.getElementById("modal-produto-preco-original").textContent = formatoMoeda.format(produto.preco);
+  document.getElementById("modal-produto-preco").textContent = formatoMoeda.format(precoDeConsultor(produto.preco));
 
   modal.hidden = false;
   modal.setAttribute("aria-hidden", "false");

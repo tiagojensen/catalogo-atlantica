@@ -386,10 +386,40 @@ button { font-family: inherit; }
   line-height: 1.45;
   margin: 0 0 0.55rem;
 }
-.produto-preco {
-  font-family: var(--fonte-display);
+.produto-precos,
+.modal-produto-precos {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.1rem;
+}
+.produto-precos { margin-top: 0.8rem; }
+.produto-preco-original,
+.modal-produto-preco-original {
+  margin: 0;
+  color: var(--ink-soft);
+  font-size: 0.8rem;
+  text-decoration: line-through;
+  text-decoration-thickness: 1px;
+  opacity: 0.82;
+}
+.produto-preco-consultor-label,
+.modal-produto-preco-label {
+  margin: 0;
+  color: var(--gold);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  line-height: 1.3;
+  text-transform: uppercase;
+}
+.produto-preco-consultor,
+.modal-produto-preco {
+  margin: 0;
   color: var(--rust);
-  font-size: 1.05rem;
+  font-family: var(--fonte-display);
+  font-size: 1.3rem;
+  font-weight: 600;
 }
 .produto-detalhes-botao {
   align-self: flex-start;
@@ -487,12 +517,8 @@ body.modal-aberto { overflow: hidden; }
   white-space: pre-line;
   line-height: 1.65;
 }
-.modal-produto-preco {
-  margin-top: 1.25rem;
-  color: var(--rust);
-  font-family: var(--fonte-display);
-  font-size: 1.25rem;
-}
+.modal-produto-precos { margin-top: 1.25rem; }
+.modal-produto-preco { font-size: 1.45rem; }
 
 .modal-sobre-nos-caixa { width: min(840px, 100%); }
 .modal-sobre-nos-conteudo { padding: 0.5rem 2.5rem 0.5rem 0; }

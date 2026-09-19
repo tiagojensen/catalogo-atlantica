@@ -134,7 +134,7 @@ function criarSecaoDeCategoria(categoria, produtosDaCategoria, templateCategoria
   preencherBanner(fragmento, categoria);
   preencherGradeDeProdutos(fragmento, produtosDaCategoria, categoria);
 
-  if (categoria.id === "nutraceuticos") {
+  if (["nutraceuticos", "cosmeticos-ozonizados"].includes(categoria.id)) {
     const acaoCatalogo = document.createElement("div");
     acaoCatalogo.className = "categoria-acao";
     acaoCatalogo.innerHTML = `

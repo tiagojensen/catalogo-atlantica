@@ -47,5 +47,12 @@
     "banners": [
       "imagens/produtos/nutraceuticos/banners/banner_01.png"
     ]
+  },
+  {
+    "id": "cosmeticos-ozonizados",
+    "nome": "Cosméticos Ozonizados",
+    "banners": [
+      "imagens/produtos/cosmeticos/banners/banner_01.png"
+    ]
   }
 ]

@@ -944,5 +944,165 @@
     "descricaoCompleta": "O Zinco é um mineral utilizado para complementar a alimentação e participa de diferentes funções do organismo. Use conforme as orientações da embalagem e de um profissional de saúde.",
     "destaque": false,
     "fonte": "https://atlanticanaturalbr.com.br/product-category/vitaminas/"
+  },
+  {
+    "id": "cosm-001",
+    "nome": "DERMO PEELING DE CRISTAL OZONIZADO",
+    "categoria": "cosmeticos-ozonizados",
+    "preco": 109.98,
+    "imagem": "imagens/produtos/cosmeticos/dermo peeling de cristal.png",
+    "descricao": "Peeling facial com cristais e ativos ozonizados para uma rotina de renovação e cuidado da pele.",
+    "descricaoCompleta": "O Dermo Peeling de Cristal Ozonizado foi desenvolvido para complementar a rotina de cuidados faciais, promovendo uma esfoliação delicada e sensação de renovação. Use conforme as orientações da embalagem e evite aplicar sobre a pele sensibilizada.",
+    "destaque": false
+  },
+  {
+    "id": "cosm-002",
+    "nome": "DESODORANTE EM CREME",
+    "categoria": "cosmeticos-ozonizados",
+    "preco": 33.98,
+    "imagem": "imagens/produtos/cosmeticos/desodorante em creme.png",
+    "descricao": "Desodorante em creme para cuidado diário e proteção confortável da pele.",
+    "descricaoCompleta": "O Desodorante em Creme oferece uma aplicação prática e confortável para a rotina diária de cuidados pessoais. Aplique conforme as orientações da embalagem e suspenda o uso em caso de irritação.",
+    "destaque": false
+  },
+  {
+    "id": "cosm-003",
+    "nome": "PASTA DENTAL CREME NATUOZ",
+    "categoria": "cosmeticos-ozonizados",
+    "preco": 33.98,
+    "imagem": "imagens/produtos/cosmeticos/pasta dental creme natuoz.png",
+    "descricao": "Pasta dental em creme para complementar a higiene bucal diária.",
+    "descricaoCompleta": "A Pasta Dental Creme Natuoz foi desenvolvida para integrar a rotina de higiene bucal, com textura cremosa e uso prático. Utilize conforme as orientações da embalagem e da sua rotina de cuidados odontológicos.",
+    "destaque": false
+  },
+  {
+    "id": "cosm-004",
+    "nome": "SHAMPOO INFANTIL",
+    "categoria": "cosmeticos-ozonizados",
+    "preco": 69.98,
+    "imagem": "imagens/produtos/cosmeticos/shampoo infantil.png",
+    "descricao": "Shampoo infantil para uma limpeza suave dos cabelos e do couro cabeludo.",
+    "descricaoCompleta": "O Shampoo Infantil foi formulado para complementar a higiene dos cabelos das crianças com uma limpeza suave. Use conforme as orientações da embalagem, evitando o contato direto com os olhos.",
+    "destaque": false
+  },
+  {
+    "id": "cosm-005",
+    "nome": "CONDICIONADOR INFANTIL",
+    "categoria": "cosmeticos-ozonizados",
+    "preco": 69.98,
+    "imagem": "imagens/produtos/cosmeticos/condicionador infantil.png",
+    "descricao": "Condicionador infantil para deixar os cabelos mais macios e fáceis de pentear.",
+    "descricaoCompleta": "O Condicionador Infantil complementa a rotina de cuidados dos cabelos, ajudando a desembaraçar e proporcionar maciez. Use conforme as orientações da embalagem e evite o contato com os olhos.",
+    "destaque": false
+  },
+  {
+    "id": "cosm-006",
+    "nome": "HIDRATANTE RADIANTE",
+    "categoria": "cosmeticos-ozonizados",
+    "preco": 69.98,
+    "imagem": "imagens/produtos/cosmeticos/hidratante radiante.png",
+    "descricao": "Hidratante corporal para ajudar a manter a pele macia, confortável e iluminada.",
+    "descricaoCompleta": "O Hidratante Radiante foi desenvolvido para complementar o cuidado diário do corpo, ajudando a manter a hidratação e uma aparência luminosa. Aplique sobre a pele limpa conforme as orientações da embalagem.",
+    "destaque": false
+  },
+  {
+    "id": "cosm-007",
+    "nome": "HIDRATANTE SENSUAL",
+    "categoria": "cosmeticos-ozonizados",
+    "preco": 69.98,
+    "imagem": "imagens/produtos/cosmeticos/hidratante sensual.png",
+    "descricao": "Hidratante corporal perfumado para uma rotina de cuidado e bem-estar.",
+    "descricaoCompleta": "O Hidratante Sensual combina cuidado da pele e uma experiência perfumada para o uso diário. Aplique uma quantidade adequada sobre a pele limpa e siga as orientações da embalagem.",
+    "destaque": false
+  },
+  {
+    "id": "cosm-008",
+    "nome": "HIDRATANTE ENCANTADA",
+    "categoria": "cosmeticos-ozonizados",
+    "preco": 69.98,
+    "imagem": "imagens/produtos/cosmeticos/hidratante encantada.png",
+    "descricao": "Hidratante corporal para manter a pele macia e perfumada no dia a dia.",
+    "descricaoCompleta": "O Hidratante Encantada foi desenvolvido para complementar a hidratação corporal e deixar uma sensação agradável na pele. Use sobre a pele limpa, conforme as orientações da embalagem.",
+    "destaque": false
+  },
+  {
+    "id": "cosm-009",
+    "nome": "ROSA MOSQUETA",
+    "categoria": "cosmeticos-ozonizados",
+    "preco": 69.98,
+    "imagem": "imagens/produtos/cosmeticos/rosa mosqueta.png",
+    "descricao": "Produto de cuidado facial e corporal à base de rosa mosqueta para complementar a hidratação da pele.",
+    "descricaoCompleta": "O produto Rosa Mosqueta complementa a rotina de cuidados da pele, ajudando a manter uma aparência hidratada e bem cuidada. Aplique conforme as orientações da embalagem e faça um teste em pequena área quando necessário.",
+    "destaque": false
+  },
+  {
+    "id": "cosm-010",
+    "nome": "DERMO SABONETE FACIAL OZONIZADO",
+    "categoria": "cosmeticos-ozonizados",
+    "preco": 109.98,
+    "imagem": "imagens/produtos/cosmeticos/dermo sabonete facial.png",
+    "descricao": "Sabonete facial ozonizado para limpeza e cuidado diário da pele do rosto.",
+    "descricaoCompleta": "O Dermo Sabonete Facial Ozonizado foi desenvolvido para complementar a limpeza diária do rosto, removendo impurezas sem abrir mão do cuidado com a pele. Use conforme as orientações da embalagem e evite o contato com os olhos.",
+    "destaque": false
+  },
+  {
+    "id": "cosm-011",
+    "nome": "DERMO ARGILA MÁSCARA OZONIZADO",
+    "categoria": "cosmeticos-ozonizados",
+    "preco": 109.98,
+    "imagem": "imagens/produtos/cosmeticos/dermo argila mascara.png",
+    "descricao": "Máscara facial de argila ozonizada para complementar a rotina de limpeza e cuidado da pele.",
+    "descricaoCompleta": "A Dermo Argila Máscara Ozonizado complementa a rotina de cuidados faciais com uma aplicação de argila voltada à limpeza e à sensação de revitalização da pele. Use conforme as orientações da embalagem e não aplique sobre pele sensibilizada.",
+    "destaque": false
+  },
+  {
+    "id": "cosm-012",
+    "nome": "SHAMPOO + CONDICIONADOR",
+    "categoria": "cosmeticos-ozonizados",
+    "preco": 142.78,
+    "imagem": "imagens/produtos/cosmeticos/shampoo + condicionador.png",
+    "descricao": "Combo de shampoo e condicionador para uma rotina completa de cuidados capilares.",
+    "descricaoCompleta": "O combo Shampoo + Condicionador reúne limpeza e tratamento para complementar a rotina de cuidados dos cabelos. Use cada produto conforme as orientações da embalagem e de acordo com as necessidades dos fios.",
+    "destaque": false
+  },
+  {
+    "id": "cosm-013",
+    "nome": "MÁSCARA CAPILAR OZONIZADO",
+    "categoria": "cosmeticos-ozonizados",
+    "preco": 142.78,
+    "imagem": "imagens/produtos/cosmeticos/mascara capilar.png",
+    "descricao": "Máscara capilar ozonizada para complementar a hidratação e o cuidado dos fios.",
+    "descricaoCompleta": "A Máscara Capilar Ozonizado foi desenvolvida para complementar a rotina de tratamento dos cabelos, ajudando a proporcionar maciez e aparência mais bem cuidada. Aplique conforme as orientações da embalagem.",
+    "destaque": false
+  },
+  {
+    "id": "cosm-014",
+    "nome": "SHAMPOO 4 EM 1",
+    "categoria": "cosmeticos-ozonizados",
+    "preco": 69.98,
+    "imagem": "imagens/produtos/cosmeticos/shampoo 4 em 1.png",
+    "descricao": "Shampoo multifuncional para simplificar a rotina de limpeza e cuidado dos cabelos.",
+    "descricaoCompleta": "O Shampoo 4 em 1 foi desenvolvido para oferecer praticidade à rotina de cuidados capilares, combinando diferentes etapas em um único produto. Use conforme as orientações da embalagem, adequando a frequência ao seu tipo de cabelo.",
+    "destaque": false
+  },
+  {
+    "id": "cosm-015",
+    "nome": "SHAMPOO OURO",
+    "categoria": "cosmeticos-ozonizados",
+    "preco": 89.98,
+    "imagem": "imagens/produtos/cosmeticos/shampoo ouro.png",
+    "descricao": "Shampoo para limpeza e cuidado dos cabelos, com fórmula voltada à aparência saudável dos fios.",
+    "descricaoCompleta": "O Shampoo Ouro complementa a rotina de higiene e tratamento dos cabelos, ajudando a deixar os fios limpos e com aparência bem cuidada. Use conforme as orientações da embalagem e evite o contato com os olhos.",
+    "destaque": false
+  },
+  {
+    "id": "cosm-016",
+    "nome": "CONDICIONADOR OURO",
+    "categoria": "cosmeticos-ozonizados",
+    "preco": 89.98,
+    "imagem": "imagens/produtos/cosmeticos/condicionador ouro.png",
+    "descricao": "Condicionador para complementar a hidratação, maciez e desembaraço dos cabelos.",
+    "descricaoCompleta": "O Condicionador Ouro complementa a rotina de cuidados capilares, ajudando a desembaraçar e proporcionar maciez aos fios. Use após o shampoo, conforme as orientações da embalagem, evitando o contato com os olhos.",
+    "destaque": false
   }
 ]

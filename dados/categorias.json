@@ -1,16 +1,9 @@
 [
   {
-    "id": "nutraceuticos",
-    "nome": "Nutracêuticos",
+    "id": "vitaminas",
+    "nome": "Vitaminas",
     "banners": [
-      "imagens/produtos/nutraceuticos/banners/banner_01.png"
-    ]
-  },
-  {
-    "id": "oleos-ozonizados",
-    "nome": "Óleos Ozonizados",
-    "banners": [
-      "imagens/produtos/oleos_ozonizados/banners/banner_01.png"
+      "imagens/produtos/vitaminas/banners/banner_01.png"
     ]
   },
   {
@@ -18,6 +11,13 @@
     "nome": "Óleos Essenciais",
     "banners": [
       "imagens/produtos/oleos_essenciais/banners/banner_01.png"
+    ]
+  },
+  {
+    "id": "oleos-ozonizados",
+    "nome": "Óleos Ozonizados",
+    "banners": [
+      "imagens/produtos/oleos_ozonizados/banners/banner_01.png"
     ]
   },
   {
@@ -39,6 +39,13 @@
     "nome": "Academia",
     "banners": [
       "imagens/produtos/academia/banners/banner_01.png"
+    ]
+  },
+  {
+    "id": "nutraceuticos",
+    "nome": "Nutracêuticos",
+    "banners": [
+      "imagens/produtos/nutraceuticos/banners/banner_01.png"
     ]
   }
 ]

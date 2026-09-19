@@ -1,5 +1,12 @@
 [
   {
+    "id": "nutraceuticos",
+    "nome": "Nutracêuticos",
+    "banners": [
+      "imagens/produtos/nutraceuticos/banners/banner_01.png"
+    ]
+  },
+  {
     "id": "oleos-ozonizados",
     "nome": "Óleos Ozonizados",
     "banners": [

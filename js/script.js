@@ -130,6 +130,17 @@ function criarSecaoDeCategoria(categoria, produtosDaCategoria, templateCategoria
   preencherBanner(fragmento, categoria);
   preencherGradeDeProdutos(fragmento, produtosDaCategoria, categoria);
 
+  if (categoria.id === "nutraceuticos") {
+    const acaoCatalogo = document.createElement("div");
+    acaoCatalogo.className = "categoria-acao";
+    acaoCatalogo.innerHTML = `
+      <a class="botao botao-primario" href="arquivos/catalogo_atl_2026.pdf" target="_blank" rel="noopener noreferrer">
+        Confira todos os produtos
+      </a>
+    `;
+    secao.appendChild(acaoCatalogo);
+  }
+
   return fragmento;
 }
 

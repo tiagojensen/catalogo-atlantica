@@ -346,6 +346,11 @@ button { font-family: inherit; }
   grid-template-columns: repeat(4, 1fr);
   gap: 1.5rem 1.25rem;
 }
+.categoria-acao {
+  display: flex;
+  justify-content: center;
+  margin-top: 2.5rem;
+}
 
 .produto-card { display: flex; flex-direction: column; }
 .produto-imagem-wrap {

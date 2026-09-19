@@ -221,6 +221,10 @@ button { font-family: inherit; }
   text-align: center;
 }
 .produtos-abertura + #secoes-produtos .categoria-secao:first-child { padding-top: 1.25rem; }
+#secoes-produtos > .categoria-secao:first-child {
+  padding-top: 0;
+  border-top: 0;
+}
 .categoria-secao {
   max-width: var(--largura-max);
   margin: 0 auto;

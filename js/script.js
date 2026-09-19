@@ -336,30 +336,37 @@ function iniciarCarrossel(secaoElemento) {
     irParaSlide(indiceAtual + (deslocamento < 0 ? 1 : -1));
   }
 
-  wrapper.addEventListener("pointerdown", (evento) => {
+  // O gesto fica no viewport fixo, e não no wrapper transformado.
+  // Assim o segundo banner continua recebendo o gesto para voltar ao primeiro.
+  elementoSwiper.addEventListener("pointerdown", (evento) => {
     if (evento.pointerType === "touch") return;
     inicioDoArraste = evento.clientX;
     wrapper.classList.add("arrastando");
-    wrapper.setPointerCapture?.(evento.pointerId);
+    elementoSwiper.setPointerCapture?.(evento.pointerId);
   });
 
-  wrapper.addEventListener("pointerup", (evento) => {
+  elementoSwiper.addEventListener("pointerup", (evento) => {
     if (evento.pointerType === "touch") return;
     finalizarArraste(evento.clientX);
   });
 
-  wrapper.addEventListener("pointercancel", () => {
+  elementoSwiper.addEventListener("pointercancel", () => {
     inicioDoArraste = null;
     wrapper.classList.remove("arrastando");
   });
 
-  wrapper.addEventListener("touchstart", (evento) => {
+  elementoSwiper.addEventListener("touchstart", (evento) => {
     inicioDoArraste = evento.touches[0].clientX;
     wrapper.classList.add("arrastando");
   }, { passive: true });
 
-  wrapper.addEventListener("touchend", (evento) => {
+  elementoSwiper.addEventListener("touchend", (evento) => {
     finalizarArraste(evento.changedTouches[0].clientX);
+  }, { passive: true });
+
+  elementoSwiper.addEventListener("touchcancel", () => {
+    inicioDoArraste = null;
+    wrapper.classList.remove("arrastando");
   }, { passive: true });
 
   atualizarCarrossel();

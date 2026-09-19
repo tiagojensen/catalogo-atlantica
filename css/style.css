@@ -617,6 +617,29 @@ body.modal-aberto { overflow: hidden; }
   .footer-inner { grid-template-columns: 1fr 1fr; }
 }
 
+@media (min-width: 1025px) {
+  .empresa-abertura-imagem {
+    width: 100vw;
+    max-width: none;
+    margin-left: calc(50% - 50vw);
+    margin-right: 0;
+    border-radius: 0;
+  }
+
+  .categoria-secao {
+    max-width: none;
+    padding-left: clamp(1.5rem, 3vw, 3rem);
+    padding-right: clamp(1.5rem, 3vw, 3rem);
+  }
+
+  .categoria-banner {
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    margin-right: 0;
+    border-radius: 0;
+  }
+}
+
 @media (max-width: 768px) {
   .empresa-abertura-imagem {
     width: 100vw;

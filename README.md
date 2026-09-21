@@ -45,8 +45,10 @@ Se uma categoria não tiver nenhum produto associado, ela não é exibida.
 ```text
 site/
 ├── index.html                         # Estrutura principal e templates HTML
+├── consultor.html                     # Landing page para conversão de consultores
 ├── css/
-│   └── style.css                      # Tokens visuais, layout e responsividade
+│   ├── style.css                      # Tokens visuais, catálogo e responsividade
+│   └── consultor.css                  # Estilos exclusivos da landing de consultores
 ├── js/
 │   └── script.js                      # Carregamento de dados e interações
 ├── dados/
@@ -266,6 +268,23 @@ O navegador abre esses arquivos em nova aba, onde o visitante pode visualizar e 
 Como os protocolos tratam de temas de saúde, o conteúdo deve ser revisado por um profissional responsável antes da publicação. O site deve apresentar os materiais como informação e orientação de leitura, sem transformar o catálogo em diagnóstico ou prescrição.
 
 ## Interface e fluxos de navegação
+
+### Página de consultores
+
+`consultor.html` é uma landing page separada do catálogo, criada para apresentar o modelo de consultoria e conduzir o visitante ao cadastro oficial. Ela usa a mesma identidade visual, logo e variáveis do projeto, mas possui uma hierarquia própria de conversão:
+
+- hero com foto principal e chamada para ação;
+- vídeo principal de apresentação;
+- três formas de participação;
+- benefícios e estrutura do modelo;
+- resumo do plano de carreira;
+- segundo vídeo explicativo;
+- chamadas para cadastro ao longo da página;
+- aviso de transparência sobre ganhos e condições.
+
+Os vídeos são incorporados do YouTube. A foto usada atualmente é `imagens/consultor.jpeg`. Os botões de cadastro apontam para `https://cadastro.atlanticanatural.com.br/imperialdiamante`, enquanto os links do catálogo levam de volta para `index.html`.
+
+O menu Seja um consultor do catálogo abre `consultor.html`, permitindo separar a comunicação institucional e comercial do conteúdo de produtos.
 
 ### Cabeçalho
 

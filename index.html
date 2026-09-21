@@ -65,13 +65,7 @@
 
   <div id="carrosseis"></div>
 
-  <section class="consultor consultor-inicio-mobile" aria-label="Seja um consultor">
-    <div class="consultor-inner">
-      <h2>Seja um consultor</h2>
-      <p>Revenda nossos produtos com condições especiais, suporte de catálogo e materiais prontos para divulgação.</p>
-      <a href="https://cadastro.atlanticanatural.com.br/imperialdiamante" class="botao botao-secundario" target="_blank" rel="noopener noreferrer">Quero ser consultor</a>
-    </div>
-  </section>
+  <div id="consultor-inicial"></div>
 
   <div class="produtos-abertura" id="produtos">
     <h2 class="categoria-titulo produtos-titulo">Nossos produtos</h2>
@@ -84,13 +78,7 @@
   </div>
 
   <!-- ===================== SEJA UM CONSULTOR ===================== -->
-  <section id="consultor" class="consultor">
-    <div class="consultor-inner">
-      <h2>Seja um consultor</h2>
-      <p>Revenda nossos produtos com condições especiais, suporte de catálogo e materiais prontos para divulgação.</p>
-      <a href="https://cadastro.atlanticanatural.com.br/imperialdiamante" class="botao botao-secundario" target="_blank" rel="noopener noreferrer">Quero ser consultor</a>
-    </div>
-  </section>
+  <div id="consultor-final"></div>
 
 </main>
 
@@ -161,6 +149,17 @@
 
     <div class="protocolos-paginacao" data-carrossel-pagination aria-label="Selecionar item"></div>
     <a class="botao botao-primario protocolos-botao" data-carrossel-action target="_blank" rel="noopener noreferrer"></a>
+  </section>
+</template>
+
+<!-- Template reutilizável da seção de consultor -->
+<template id="template-consultor">
+  <section class="consultor" id="">
+    <div class="consultor-inner">
+      <h2>Seja um consultor</h2>
+      <p>Revenda nossos produtos com condições especiais, suporte de catálogo e materiais prontos para divulgação.</p>
+      <a href="https://cadastro.atlanticanatural.com.br/imperialdiamante" class="botao botao-secundario" target="_blank" rel="noopener noreferrer">Quero ser consultor</a>
+    </div>
   </section>
 </template>
 

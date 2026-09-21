@@ -25,6 +25,8 @@ document.addEventListener("DOMContentLoaded", async () => {
   iniciarDropdowns();
   iniciarModalProduto();
   iniciarModalSobreNos();
+  montarConsultorNoAlvo("consultor-inicial", "consultor-inicial", "consultor-inicio-mobile");
+  montarConsultorNoAlvo("consultor-final", "consultor-final");
 
   try {
     const [produtos, categorias, carrosseis] = await Promise.all([
@@ -47,6 +49,22 @@ async function buscarJSON(caminho) {
   const resposta = await fetch(caminho, { cache: "no-store" });
   if (!resposta.ok) throw new Error(`Falha ao buscar ${caminho}`);
   return resposta.json();
+}
+
+function criarSecaoConsultor(id, classesExtras = "") {
+  const template = document.getElementById("template-consultor");
+  if (!template) return null;
+
+  const secao = template.content.firstElementChild.cloneNode(true);
+  secao.id = id;
+  if (classesExtras) secao.classList.add(...classesExtras.split(" ").filter(Boolean));
+  return secao;
+}
+
+function montarConsultorNoAlvo(idAlvo, idSecao, classesExtras = "") {
+  const alvo = document.getElementById(idAlvo);
+  const secao = criarSecaoConsultor(idSecao, classesExtras);
+  if (alvo && secao) alvo.replaceWith(secao);
 }
 
 /* =========================================================
@@ -272,6 +290,7 @@ function montarMenusCategorias(categorias) {
 function montarSecoesDeCategoria(categorias, produtos) {
   const container = document.getElementById("secoes-produtos");
   const templateCategoria = document.getElementById("template-categoria");
+  const templateConsultor = document.getElementById("template-consultor");
   document.getElementById("mensagem-carregando").remove();
 
   categorias.forEach((categoria) => {
@@ -283,6 +302,11 @@ function montarSecoesDeCategoria(categorias, produtos) {
 
     // Após anexar, a seção já é um elemento real no DOM (o fragmento é "esvaziado" ao ser inserido)
     iniciarCarrossel(container.lastElementChild);
+
+    if (categoria.consultorDepois && templateConsultor) {
+      const secaoConsultor = criarSecaoConsultor(`consultor-apos-${categoria.id}`);
+      if (secaoConsultor) container.appendChild(secaoConsultor);
+    }
   });
 }
 

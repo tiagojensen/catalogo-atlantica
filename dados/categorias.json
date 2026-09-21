@@ -4,7 +4,8 @@
     "nome": "Vitaminas",
     "banners": [
       "imagens/produtos/vitaminas/banners/banner_01.png"
-    ]
+    ],
+    "consultorDepois": true
   },
   {
     "id": "oleos-essenciais",
@@ -18,7 +19,8 @@
     "nome": "Óleos Ozonizados",
     "banners": [
       "imagens/produtos/oleos_ozonizados/banners/banner_01.png"
-    ]
+    ],
+    "consultorDepois": true
   },
   {
     "id": "wave-global",
@@ -32,7 +34,8 @@
     "nome": "Chás",
     "banners": [
       "imagens/produtos/chas/banners/banner_01.png"
-    ]
+    ],
+    "consultorDepois": true
   },
   {
     "id": "academia",
@@ -46,7 +49,8 @@
     "nome": "Nutracêuticos",
     "banners": [
       "imagens/produtos/nutraceuticos/banners/banner_01.png"
-    ]
+    ],
+    "consultorDepois": true
   },
   {
     "id": "cosmeticos-ozonizados",

@@ -127,9 +127,6 @@
 .consultor-cta .consultor-titulo p { margin-right: auto; margin-left: auto; }
 .consultor-cta .botao { margin-top: 0.5rem; }
 .consultor-disclaimer { max-width: 800px; margin: 1.75rem auto 0; color: var(--ink-soft); font-size: 0.76rem; line-height: 1.6; }
-.consultor-footer { padding: 1.5rem; background: var(--consultor-dark); color: rgba(239, 234, 224, 0.65); text-align: center; font-size: 0.82rem; }
-.consultor-footer a { color: #e0ae4f; }
-
 @media (max-width: 800px) {
   .consultor-page .main-nav {
     position: static;

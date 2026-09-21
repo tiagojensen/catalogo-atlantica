@@ -2,6 +2,7 @@
    TOKENS
    ========================================================= */
 :root {
+  color-scheme: light;
   --paper: #EFEAE0;
   --paper-card: #F8F5EE;
   --ink: #21261F;
@@ -22,7 +23,11 @@
    RESET BÁSICO
    ========================================================= */
 * { box-sizing: border-box; }
-html { scroll-behavior: smooth; }
+html {
+  scroll-behavior: smooth;
+  color-scheme: light;
+  background: var(--paper);
+}
 body {
   margin: 0;
   background: var(--paper);

@@ -304,7 +304,10 @@ function montarSecoesDeCategoria(categorias, produtos) {
     iniciarCarrossel(container.lastElementChild);
 
     if (categoria.consultorDepois && templateConsultor) {
-      const secaoConsultor = criarSecaoConsultor(`consultor-apos-${categoria.id}`);
+      const secaoConsultor = criarSecaoConsultor(
+        `consultor-apos-${categoria.id}`,
+        "consultor-inicio-mobile"
+      );
       if (secaoConsultor) container.appendChild(secaoConsultor);
     }
   });

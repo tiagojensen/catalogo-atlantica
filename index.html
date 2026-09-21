@@ -71,11 +71,11 @@
   </section>
   FIM DO BLOCO INICIAL DESATIVADO -->
 
-  <!-- BLOCO "NOSSOS PRODUTOS" TEMPORARIAMENTE DESATIVADO
+  <div id="carrosseis"></div>
+
   <div class="produtos-abertura" id="produtos">
     <h2 class="categoria-titulo produtos-titulo">Nossos produtos</h2>
   </div>
-  FIM DO BLOCO "NOSSOS PRODUTOS" DESATIVADO -->
 
   <!-- ===================== SEÇÕES DE CATEGORIA (banner + produtos) ===================== -->
   <!-- Cada categoria é montada a partir dos templates abaixo e inserida aqui pelo script.js -->
@@ -139,6 +139,28 @@
     </div>
 
     <div class="produtos-grid"></div>
+  </section>
+</template>
+
+<!-- Template reutilizável de carrossel editorial -->
+<template id="template-carrossel">
+  <section class="protocolos-secao" id="">
+    <div class="protocolos-cabecalho">
+      <span class="secao-eyebrow"></span>
+      <h2 class="protocolos-titulo"></h2>
+      <p class="protocolos-descricao"></p>
+    </div>
+
+    <div class="protocolos-carrossel">
+      <button type="button" class="protocolo-seta protocolo-seta-anterior" data-carrossel-prev aria-label="Item anterior"></button>
+      <div class="protocolos-viewport" data-carrossel-viewport>
+        <div class="protocolos-trilho" data-carrossel-track></div>
+      </div>
+      <button type="button" class="protocolo-seta protocolo-seta-proximo" data-carrossel-next aria-label="Próximo item"></button>
+    </div>
+
+    <div class="protocolos-paginacao" data-carrossel-pagination aria-label="Selecionar item"></div>
+    <a class="botao botao-primario protocolos-botao" data-carrossel-action target="_blank" rel="noopener noreferrer"></a>
   </section>
 </template>
 

@@ -1,0 +1,68 @@
+[
+  {
+    "id": "protocolos",
+    "eyebrow": "Guias de bem-estar",
+    "titulo": "Encontre um protocolo para sua rotina",
+    "descricao": "Conheça nossos materiais informativos e abra cada protocolo para consultar os detalhes.",
+    "botao": {
+      "texto": "Confira todos os protocolos",
+      "link": "arquivos/protocolos_atl.pdf"
+    },
+    "itens": [
+      {
+        "id": "fibromialgia",
+        "nome": "Fibromialgia",
+        "imagem": "imagens/protocolos/fibromialgia.jpg",
+        "link": "imagens/protocolos/fibromialgia.pdf"
+      },
+      {
+        "id": "emagrecimento",
+        "nome": "Emagrecimento",
+        "imagem": "imagens/protocolos/emagrecimento.jpg",
+        "link": "imagens/protocolos/emagrecimento.pdf"
+      },
+      {
+        "id": "ganho-de-massa",
+        "nome": "Ganho de massa",
+        "imagem": "imagens/protocolos/ganho de massa.jpg",
+        "link": "imagens/protocolos/ganho de massa.pdf"
+      },
+      {
+        "id": "pressao-alta",
+        "nome": "Pressão alta",
+        "imagem": "imagens/protocolos/pressao alta.jpg",
+        "link": "imagens/protocolos/Pressão alta.pdf"
+      },
+      {
+        "id": "imunidade",
+        "nome": "Imunidade",
+        "imagem": "imagens/protocolos/imunidade.jpg",
+        "link": "imagens/protocolos/imunidade.pdf"
+      },
+      {
+        "id": "imunidade-infantil",
+        "nome": "Imunidade infantil",
+        "imagem": "imagens/protocolos/imunidade infantil.jpg",
+        "link": "imagens/protocolos/imunidade infantil.pdf"
+      },
+      {
+        "id": "insonia",
+        "nome": "Insônia",
+        "imagem": "imagens/protocolos/insonia.jpg",
+        "link": "imagens/protocolos/insonia.pdf"
+      },
+      {
+        "id": "menopausa-tpm",
+        "nome": "Menopausa e TPM",
+        "imagem": "imagens/protocolos/menopausa e tpm.jpg",
+        "link": "imagens/protocolos/menopausa e TPM.pdf"
+      },
+      {
+        "id": "queda-capilar",
+        "nome": "Queda capilar",
+        "imagem": "imagens/protocolos/queda capilar.jpg",
+        "link": "imagens/protocolos/queda capilar.pdf"
+      }
+    ]
+  }
+]

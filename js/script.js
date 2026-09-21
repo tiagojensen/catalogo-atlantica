@@ -3,6 +3,7 @@
    ========================================================= */
 const CAMINHO_PRODUTOS = "dados/produtos.json";
 const CAMINHO_CATEGORIAS = "dados/categorias.json";
+const CAMINHO_CARROSSEIS = "dados/carrosseis.json";
 const IMAGEM_PADRAO = "https://placehold.co/600x600/EFEAE0/9C4A32?text=Sem+imagem";
 const IMAGEM_BANNER_PADRAO = "https://placehold.co/1600x600/21261F/EFEAE0?text=Banner";
 
@@ -26,11 +27,13 @@ document.addEventListener("DOMContentLoaded", async () => {
   iniciarModalSobreNos();
 
   try {
-    const [produtos, categorias] = await Promise.all([
+    const [produtos, categorias, carrosseis] = await Promise.all([
       buscarJSON(CAMINHO_PRODUTOS),
       buscarJSON(CAMINHO_CATEGORIAS),
+      buscarJSON(CAMINHO_CARROSSEIS),
     ]);
 
+    montarCarrosseis(carrosseis);
     montarMenusCategorias(categorias);
     montarSecoesDeCategoria(categorias, produtos);
   } catch (erro) {
@@ -44,6 +47,168 @@ async function buscarJSON(caminho) {
   const resposta = await fetch(caminho, { cache: "no-store" });
   if (!resposta.ok) throw new Error(`Falha ao buscar ${caminho}`);
   return resposta.json();
+}
+
+/* =========================================================
+   CARROSSÉIS EDITORIAIS REUTILIZÁVEIS
+   Os cards e links vêm de dados/carrosseis.json.
+   ========================================================= */
+function montarCarrosseis(carrosseis) {
+  const container = document.getElementById("carrosseis");
+  const template = document.getElementById("template-carrossel");
+  if (!container || !template) return;
+
+  carrosseis.forEach((configuracao) => {
+    if (!configuracao?.itens?.length) return;
+
+    const fragmento = template.content.cloneNode(true);
+    const secao = fragmento.querySelector(".protocolos-secao");
+    const titulo = secao.querySelector(".protocolos-titulo");
+    const descricao = secao.querySelector(".protocolos-descricao");
+    const botao = secao.querySelector("[data-carrossel-action]");
+    const trilho = secao.querySelector("[data-carrossel-track]");
+    const tituloId = `titulo-carrossel-${configuracao.id}`;
+
+    secao.id = `carrossel-${configuracao.id}`;
+    secao.setAttribute("aria-labelledby", tituloId);
+    secao.querySelector(".secao-eyebrow").textContent = configuracao.eyebrow || "";
+    titulo.id = tituloId;
+    titulo.textContent = configuracao.titulo || "";
+    descricao.textContent = configuracao.descricao || "";
+
+    configuracao.itens.forEach((item) => {
+      const card = document.createElement("a");
+      const imagem = document.createElement("img");
+      const nome = document.createElement("span");
+
+      card.className = "protocolo-card";
+      card.href = item.link || item.imagem;
+      card.target = "_blank";
+      card.rel = "noopener noreferrer";
+
+      imagem.src = item.imagem;
+      imagem.alt = item.alt || item.nome;
+      imagem.loading = "lazy";
+      imagem.draggable = false;
+      imagem.onerror = () => (imagem.src = IMAGEM_PADRAO);
+
+      nome.textContent = item.nome;
+      card.append(imagem, nome);
+      trilho.appendChild(card);
+    });
+
+    if (configuracao.botao?.link) {
+      botao.href = configuracao.botao.link;
+      botao.textContent = configuracao.botao.texto || "Ver todos";
+    } else {
+      botao.remove();
+    }
+
+    container.appendChild(fragmento);
+    iniciarCarrosselEditorial(secao);
+  });
+}
+
+function iniciarCarrosselEditorial(secao) {
+  const viewport = secao.querySelector("[data-carrossel-viewport]");
+  const trilho = secao.querySelector("[data-carrossel-track]");
+  const paginacao = secao.querySelector("[data-carrossel-pagination]");
+  const botaoAnterior = secao.querySelector("[data-carrossel-prev]");
+  const botaoProximo = secao.querySelector("[data-carrossel-next]");
+  if (!viewport || !trilho || !paginacao) return;
+
+  const originais = Array.from(trilho.querySelectorAll(".protocolo-card"));
+  const quantidade = originais.length;
+  if (!quantidade) return;
+
+  // Três cópias garantem que sempre exista um item antes e depois do destaque.
+  const criarCopia = () => originais.map((card) => card.cloneNode(true));
+  trilho.replaceChildren(...criarCopia(), ...criarCopia(), ...criarCopia());
+  const cards = Array.from(trilho.querySelectorAll(".protocolo-card"));
+
+  let indiceAtual = quantidade + Math.min(1, quantidade - 1);
+  let inicioDoArraste = null;
+  let cliqueBloqueado = false;
+
+  for (let indice = 0; indice < quantidade; indice += 1) {
+    const dot = document.createElement("button");
+    dot.type = "button";
+    dot.className = "protocolo-dot";
+    dot.setAttribute("aria-label", `Ir para o item ${indice + 1}`);
+    dot.addEventListener("click", () => irParaItem(quantidade + indice));
+    paginacao.appendChild(dot);
+  }
+
+  function indiceLogico() {
+    return ((indiceAtual % quantidade) + quantidade) % quantidade;
+  }
+
+  function atualizarCarrossel() {
+    // offsetWidth ignora o scale visual e mede o espaço real ocupado no trilho.
+    const larguraCard = cards[0].offsetWidth;
+    const estilosTrilho = getComputedStyle(trilho);
+    const espacamento = parseFloat(estilosTrilho.columnGap || estilosTrilho.gap) || 0;
+    const deslocamento = (viewport.clientWidth - larguraCard) / 2 - indiceAtual * (larguraCard + espacamento);
+
+    trilho.style.transform = `translate3d(${deslocamento}px, 0, 0)`;
+    cards.forEach((card, indice) => card.classList.toggle("ativo", indice === indiceAtual));
+    paginacao.querySelectorAll(".protocolo-dot").forEach((dot, indice) => {
+      dot.classList.toggle("ativo", indice === indiceLogico());
+      dot.setAttribute("aria-current", indice === indiceLogico() ? "true" : "false");
+    });
+  }
+
+  function irParaItem(novoIndice) {
+    indiceAtual = novoIndice;
+    trilho.style.transition = "";
+    atualizarCarrossel();
+  }
+
+  trilho.addEventListener("transitionend", (evento) => {
+    if (evento.propertyName !== "transform") return;
+    if (indiceAtual >= quantidade && indiceAtual < quantidade * 2) return;
+
+    indiceAtual = quantidade + indiceLogico();
+    trilho.style.transition = "none";
+    atualizarCarrossel();
+    void trilho.offsetWidth;
+    trilho.style.transition = "";
+  });
+
+  botaoAnterior?.addEventListener("click", () => irParaItem(indiceAtual - 1));
+  botaoProximo?.addEventListener("click", () => irParaItem(indiceAtual + 1));
+
+  viewport.addEventListener("pointerdown", (evento) => {
+    inicioDoArraste = evento.clientX;
+    trilho.classList.add("arrastando");
+    viewport.setPointerCapture?.(evento.pointerId);
+  });
+
+  viewport.addEventListener("pointerup", (evento) => {
+    if (inicioDoArraste === null) return;
+    const deslocamento = evento.clientX - inicioDoArraste;
+    inicioDoArraste = null;
+    trilho.classList.remove("arrastando");
+
+    if (Math.abs(deslocamento) < 40) return;
+    cliqueBloqueado = true;
+    irParaItem(indiceAtual + (deslocamento < 0 ? 1 : -1));
+  });
+
+  viewport.addEventListener("pointercancel", () => {
+    inicioDoArraste = null;
+    trilho.classList.remove("arrastando");
+  });
+
+  viewport.addEventListener("click", (evento) => {
+    if (!cliqueBloqueado) return;
+    evento.preventDefault();
+    evento.stopPropagation();
+    cliqueBloqueado = false;
+  }, true);
+
+  window.addEventListener("resize", atualizarCarrossel);
+  atualizarCarrossel();
 }
 
 /* =========================================================

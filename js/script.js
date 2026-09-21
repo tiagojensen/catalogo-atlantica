@@ -263,7 +263,16 @@ function iniciarNavegacaoParaOTopo() {
       evento.preventDefault();
       document.getElementById("main-nav")?.classList.remove("aberto");
       document.getElementById("nav-toggle")?.setAttribute("aria-expanded", "false");
-      window.scrollTo({ top: 0, behavior: "smooth" });
+
+      const voltarAoTopo = () => {
+        window.scrollTo({ top: 0, left: 0, behavior: "auto" });
+        document.documentElement.scrollTop = 0;
+        document.body.scrollTop = 0;
+      };
+
+      voltarAoTopo();
+      requestAnimationFrame(voltarAoTopo);
+      setTimeout(voltarAoTopo, 120);
     });
   });
 }

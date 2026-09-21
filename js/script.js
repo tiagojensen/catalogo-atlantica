@@ -95,14 +95,11 @@ function montarCarrosseis(carrosseis) {
     descricao.textContent = configuracao.descricao || "";
 
     configuracao.itens.forEach((item) => {
-      const card = document.createElement("a");
+      const card = document.createElement("div");
       const imagem = document.createElement("img");
       const nome = document.createElement("span");
 
       card.className = "protocolo-card";
-      card.href = item.link || item.imagem;
-      card.target = "_blank";
-      card.rel = "noopener noreferrer";
 
       imagem.src = item.imagem;
       imagem.alt = item.alt || item.nome;

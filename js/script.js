@@ -23,6 +23,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   document.getElementById("ano-atual").textContent = new Date().getFullYear();
   iniciarMenuMobile();
   iniciarDropdowns();
+  iniciarNavegacaoParaOTopo();
   iniciarModalProduto();
   iniciarModalSobreNos();
   montarConsultorNoAlvo("consultor-inicial", "consultor-inicial", "consultor-inicio-mobile");
@@ -211,8 +212,6 @@ function iniciarCarrosselEditorial(secao) {
     reiniciarAutoplay();
   });
 
-  secao.addEventListener("mouseenter", () => clearInterval(intervaloAutoplay));
-  secao.addEventListener("mouseleave", reiniciarAutoplay);
   secao.addEventListener("focusin", () => clearInterval(intervaloAutoplay));
   secao.addEventListener("focusout", (evento) => {
     if (!secao.contains(evento.relatedTarget)) reiniciarAutoplay();
@@ -256,6 +255,17 @@ function iniciarCarrosselEditorial(secao) {
   window.addEventListener("resize", atualizarCarrossel);
   atualizarCarrossel();
   reiniciarAutoplay();
+}
+
+function iniciarNavegacaoParaOTopo() {
+  document.querySelectorAll('a[href="#inicio"]').forEach((link) => {
+    link.addEventListener("click", (evento) => {
+      evento.preventDefault();
+      document.getElementById("main-nav")?.classList.remove("aberto");
+      document.getElementById("nav-toggle")?.setAttribute("aria-expanded", "false");
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  });
 }
 
 /* =========================================================

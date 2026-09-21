@@ -144,13 +144,17 @@ function iniciarCarrosselEditorial(secao) {
   let indiceAtual = quantidade + Math.min(1, quantidade - 1);
   let inicioDoArraste = null;
   let cliqueBloqueado = false;
+  let intervaloAutoplay;
 
   for (let indice = 0; indice < quantidade; indice += 1) {
     const dot = document.createElement("button");
     dot.type = "button";
     dot.className = "protocolo-dot";
     dot.setAttribute("aria-label", `Ir para o item ${indice + 1}`);
-    dot.addEventListener("click", () => irParaItem(quantidade + indice));
+    dot.addEventListener("click", () => {
+      irParaItem(quantidade + indice);
+      reiniciarAutoplay();
+    });
     paginacao.appendChild(dot);
   }
 
@@ -179,6 +183,14 @@ function iniciarCarrosselEditorial(secao) {
     atualizarCarrossel();
   }
 
+  function reiniciarAutoplay() {
+    clearInterval(intervaloAutoplay);
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    intervaloAutoplay = setInterval(() => {
+      irParaItem(indiceAtual + 1);
+    }, 4500);
+  }
+
   trilho.addEventListener("transitionend", (evento) => {
     if (evento.propertyName !== "transform") return;
     if (indiceAtual >= quantidade && indiceAtual < quantidade * 2) return;
@@ -190,10 +202,24 @@ function iniciarCarrosselEditorial(secao) {
     trilho.style.transition = "";
   });
 
-  botaoAnterior?.addEventListener("click", () => irParaItem(indiceAtual - 1));
-  botaoProximo?.addEventListener("click", () => irParaItem(indiceAtual + 1));
+  botaoAnterior?.addEventListener("click", () => {
+    irParaItem(indiceAtual - 1);
+    reiniciarAutoplay();
+  });
+  botaoProximo?.addEventListener("click", () => {
+    irParaItem(indiceAtual + 1);
+    reiniciarAutoplay();
+  });
+
+  secao.addEventListener("mouseenter", () => clearInterval(intervaloAutoplay));
+  secao.addEventListener("mouseleave", reiniciarAutoplay);
+  secao.addEventListener("focusin", () => clearInterval(intervaloAutoplay));
+  secao.addEventListener("focusout", (evento) => {
+    if (!secao.contains(evento.relatedTarget)) reiniciarAutoplay();
+  });
 
   viewport.addEventListener("pointerdown", (evento) => {
+    clearInterval(intervaloAutoplay);
     inicioDoArraste = evento.clientX;
     trilho.classList.add("arrastando");
     viewport.setPointerCapture?.(evento.pointerId);
@@ -205,14 +231,19 @@ function iniciarCarrosselEditorial(secao) {
     inicioDoArraste = null;
     trilho.classList.remove("arrastando");
 
-    if (Math.abs(deslocamento) < 40) return;
+    if (Math.abs(deslocamento) < 40) {
+      reiniciarAutoplay();
+      return;
+    }
     cliqueBloqueado = true;
     irParaItem(indiceAtual + (deslocamento < 0 ? 1 : -1));
+    reiniciarAutoplay();
   });
 
   viewport.addEventListener("pointercancel", () => {
     inicioDoArraste = null;
     trilho.classList.remove("arrastando");
+    reiniciarAutoplay();
   });
 
   viewport.addEventListener("click", (evento) => {
@@ -224,6 +255,7 @@ function iniciarCarrosselEditorial(secao) {
 
   window.addEventListener("resize", atualizarCarrossel);
   atualizarCarrossel();
+  reiniciarAutoplay();
 }
 
 /* =========================================================

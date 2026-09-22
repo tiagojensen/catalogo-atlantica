@@ -410,6 +410,7 @@ function preencherGradeDeProdutos(fragmento, produtosDaCategoria, categoria) {
   produtosDaCategoria.forEach((produto) => {
     const card = templateProduto.content.cloneNode(true);
     const imagem = card.querySelector(".produto-imagem");
+    const elementoCard = card.querySelector(".produto-card");
 
     imagem.src = produto.imagem;
     imagem.alt = produto.nome;
@@ -420,6 +421,19 @@ function preencherGradeDeProdutos(fragmento, produtosDaCategoria, categoria) {
     card.querySelector(".produto-descricao").textContent = produto.descricao || "";
     card.querySelector(".produto-preco-original").textContent = formatoMoeda.format(produto.preco);
     card.querySelector(".produto-preco-consultor").textContent = formatoMoeda.format(precoDeConsultor(produto.preco));
+    elementoCard.tabIndex = 0;
+    elementoCard.setAttribute("role", "group");
+    elementoCard.setAttribute("aria-label", `${produto.nome}. Pressione Enter para ver os detalhes.`);
+
+    elementoCard.addEventListener("click", (evento) => {
+      if (evento.target.closest("button, a, input, select, textarea")) return;
+      abrirModalProduto(produto, categoria);
+    });
+    elementoCard.addEventListener("keydown", (evento) => {
+      if (evento.target !== elementoCard || (evento.key !== "Enter" && evento.key !== " ")) return;
+      evento.preventDefault();
+      abrirModalProduto(produto, categoria);
+    });
     card.querySelector(".produto-detalhes-botao").addEventListener("click", () => {
       abrirModalProduto(produto, categoria);
     });
